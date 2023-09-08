@@ -7,7 +7,6 @@ interface PianoProps {
 }
 
 const Piano: React.FC<PianoProps> = (piano: PianoProps) => {
-
     return (
         <div className="flex">
 
@@ -22,6 +21,6 @@ const Piano: React.FC<PianoProps> = (piano: PianoProps) => {
 
         </div>
     );
-}
+};
 
 export default Piano;
