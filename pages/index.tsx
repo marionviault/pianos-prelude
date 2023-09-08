@@ -1,16 +1,18 @@
 import ContactForm from "../Components/ContactForm";
 import React from "react";
+import PianoCarousel from "../Components/PianoCarousel";
 
 const Home: React.FC = () => {
-    return (
-        <div className="divide-y-2 divide-slate-400">
 
-            <div className="pt-8 pb-8">
-                <ContactForm/>
-            </div>
+    return (
+        <div className="">
+
+            <PianoCarousel/>
+
+            <ContactForm/>
 
         </div>
     )
-}
+};
 
 export default Home;

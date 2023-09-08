@@ -19,6 +19,10 @@ const Navigation: React.FC = () => {
                             </Link>
                         </li>
 
+                        <li className="">
+                            <a href="#piano-carousel">Liste des pianos</a>
+                        </li>
+
                         <li className={`${ROUTER.pathname === "/about" ? styles.active : ""} p-2`}>
                             <Link href="/about">
                                 <a>A PROPOS</a>
