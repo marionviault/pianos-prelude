@@ -1,5 +1,5 @@
 {
-  "name": "piano-prelude",
+  "name": "pianos-prelude",
   "private": true,
   "scripts": {
     "dev": "next dev",
