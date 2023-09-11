@@ -1,17 +1,16 @@
 import ContactForm from "../Components/ContactForm";
 import React from "react";
-import PianoCarousel from "../Components/PianoCarousel";
 
 const Home: React.FC = () => {
 
     return (
-        <div className="">
+        <>
 
-            <PianoCarousel/>
+            <h1>Page d&apos;accueil</h1>
 
             <ContactForm/>
 
-        </div>
+        </>
     )
 };
 
