@@ -4,7 +4,7 @@ import React from "react";
 const ContactForm: React.FC = () => {
 
     return (
-        <form className="flex">
+        <form id="contact" className="flex">
 
             <div className="inline-flex basis-3/4 border-2 border-slate-400 rounded-lg">
 
