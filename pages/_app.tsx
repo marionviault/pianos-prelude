@@ -21,8 +21,6 @@ function PianoApp({Component, pageProps}: AppProps) {
 
                     <Navigation/>
 
-                    <h1>TITRE</h1>
-
                     <main className=" pl-12 pr-12">
                         <Component {...pageProps} />
                     </main>
