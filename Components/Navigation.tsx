@@ -8,9 +8,10 @@ import Image from "next/image";
 import {navItem} from "../interfaces/navigation";
 
 const NAVIGATION: navItem[] = [
-    {name: 'À propos', href: '/#a-propos', current: false},
     {name: 'Prestations', href: '/#prestations', current: false},
-    {name: 'Pianos en vente', href: '/pianos', current: false},
+    {name: 'Contact', href: '/#contact', current: false},
+    {name: 'Pianos en vente', href: '/#piano-carousel', current: false},
+    {name: 'À propos', href: '/#a-propos', current: false},
 ]
 
 function classNames(...classes: string[]): string {

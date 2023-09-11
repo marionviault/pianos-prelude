@@ -1,5 +1,5 @@
 import React from "react";
-import PianoCarousel from "../../Components/PianoCarousel";
+import PianoCarousel from "../../Components/sections/PianoCarousel";
 
 const Pianos: React.FC = () => {
 
