@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from 'next/link';
 
 interface PianoProps {
     name: string;
@@ -19,10 +20,15 @@ const Piano: React.FC<PianoProps> = (piano: PianoProps) => {
 
             <div className="basis-3/5 text-sm">
                 <div className="uppercase">{piano.name}</div>
+
                 <div>{piano.description.substring(0, 130)}...</div>
+
+                <div>{piano.price} €</div>
+
+                <Link href={`/piano/${piano.name}`}>Voir plus</Link>
             </div>
 
-            <div>{piano.price} €</div>
+
 
         </div>
     );
