@@ -1,9 +1,12 @@
 import React from "react";
+import Image from "next/image";
 
 interface PianoProps {
     name: string;
-    image: string;
+    photo: string;
+    alt: string;
     description: string;
+    price: string;
 }
 
 const Piano: React.FC<PianoProps> = (piano: PianoProps) => {
@@ -11,13 +14,15 @@ const Piano: React.FC<PianoProps> = (piano: PianoProps) => {
         <div className="flex">
 
             <div className="basis-2/5">
-                <img src={piano.image} alt=""/>
+                <Image src={piano.photo} alt={piano.alt} width="400" height="400"/>
             </div>
 
             <div className="basis-3/5 text-sm">
                 <div className="uppercase">{piano.name}</div>
                 <div>{piano.description.substring(0, 130)}...</div>
             </div>
+
+            <div>{piano.price} €</div>
 
         </div>
     );
