@@ -1,9 +1,11 @@
 import {useEffect, useState} from "react";
-import {router} from "next/client";
+import {useRouter} from "next/router";
 
 const PianoFull = () => {
 
     const [piano, setPiano] = useState('');
+
+    const router = useRouter();
 
     useEffect(() => {
         const getPiano = async () => {
