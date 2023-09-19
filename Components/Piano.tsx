@@ -15,7 +15,7 @@ const Piano: React.FC<PianoProps> = (piano: PianoProps) => {
         <div className="flex">
 
             <div className="basis-2/5">
-                {/*<Image src={piano.photo} alt={piano.alt} width="400" height="400"/>*/}
+                <img src={piano.photo} alt={piano.alt} width="400" height="400"/>
             </div>
 
             <div className="basis-3/5 text-sm">
