@@ -1,14 +1,29 @@
 import React from "react";
-import Piano from "./../Piano";
+import Piano, {PianoProps} from "./../Piano";
+import useSWR from "swr";
 
+// Write a fetcher function to wrap the native fetch function and return the result of a call to url in json format
+const fetcher = (url) => fetch(url).then((res) => res.json());
 const PianoCarousel: React.FC = () => {
+
+    const { data, error } = useSWR('/api/staticdata', fetcher);
+
+    //Handle the error state
+    if (error) return <div>Failed to load</div>;
+    //Handle the loading state
+
+    let pianos= [];
+    if (!data) {
+        return <div>Loading...</div>;
+    } else {
+        pianos = data.piano;
+    }
 
     return (
         <section id="pianos" className="flex">
-            <Piano name="Piano droit 1" photo="/pianos/piano-exemple-1.jpg" alt="Photo du piano droit 1" description="Description du piano droit 1" price="350"/>
-            <Piano name="Piano droit 2" photo="/pianos/piano-exemple-2.jpg" alt="Photo du piano droit 2" description="Description du piano droit 2" price="50"/>
-            <Piano name="Piano droit 3" photo="/pianos/piano-exemple-3.jpg" alt="Photo du piano droit 3" description="Description du piano droit 3" price="100"/>
-            <Piano name="Piano droit 4" photo="/pianos/piano-exemple-4.jpg" alt="Photo du piano droit 4" description="Description du piano droit 4" price="200"/>
+            {pianos.map((piano: PianoProps, index: React.Key) => {
+                return <Piano key={index} name={piano.name} photo={piano.photo} alt={piano.alt} description={piano.description} price={piano.price}/>
+            })}
         </section>
     );
 };
