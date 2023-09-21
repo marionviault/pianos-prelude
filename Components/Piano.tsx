@@ -1,8 +1,7 @@
 import React from "react";
-import Image from "next/image";
 import Link from 'next/link';
 
-interface PianoProps {
+export interface PianoProps {
     name: string;
     photo: string;
     alt: string;
@@ -27,8 +26,6 @@ const Piano: React.FC<PianoProps> = (piano: PianoProps) => {
 
                 <Link href={`/piano/${piano.name}`}>Voir plus</Link>
             </div>
-
-
 
         </div>
     );
