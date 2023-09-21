@@ -8,10 +8,11 @@ import Image from "next/image";
 import {navItem} from "../interfaces/navigation";
 
 const NAVIGATION: navItem[] = [
-    {name: 'Prestations', href: '/#services', current: false},
-    {name: 'Contact', href: '/#contact', current: false},
-    {name: 'Pianos en vente', href: '/#piano-carousel', current: false},
+    {name: 'Services et prestations', href: '/#services-et-prestations', current: false},
     {name: 'À propos', href: '/#about', current: false},
+    {name: 'Témoignages', href: '/#temoignages', current: false},
+    {name: 'Contact', href: '/#contact', current: false},
+    {name: 'Pianos en vente', href: '/#pianos', current: false},
 ]
 
 function classNames(...classes: string[]): string {
@@ -42,8 +43,9 @@ export default function Navigation(): JSX.Element {
                             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
 
                                 <div className="flex flex-shrink-0 items-center">
-                                    <img className="h-8 w-auto" src="/twitter-logo.png" alt="Your Company" width="50"
+                                    <img className="h-8 w-auto" src="/piano-icon.png" alt="Your Company" width="50"
                                            height="50"/>
+                                    <p className="pl-3 text-sm font-medium text-white">Pianos Prélude</p>
                                 </div>
 
                                 <div className="hidden sm:ml-6 sm:block">

@@ -4,11 +4,11 @@ import Piano from "./../Piano";
 const PianoCarousel: React.FC = () => {
 
     return (
-        <section id="piano-carousel" className="flex">
-            <Piano name="piano1" photo="/facebook-logo.png" alt="1er piano" description="Description bla bla" price="350"/>
-            <Piano name="piano2" photo="/instagram-logo.png" alt="2eme piano" description="gfdgsdfgsfdgfsdgfsdgsfdgsfdgsd" price="50"/>
-            <Piano name="piano3" photo="/instagram-logo.png" alt="3eme piano" description="3eme piano descriptif" price="100"/>
-            <Piano name="piano4" photo="/twitter-logo.png" alt="4eme piano" description="" price="200"/>
+        <section id="pianos" className="flex">
+            <Piano name="Piano droit 1" photo="/pianos/piano-exemple-1.jpg" alt="Photo du piano droit 1" description="Description du piano droit 1" price="350"/>
+            <Piano name="Piano droit 2" photo="/pianos/piano-exemple-2.jpg" alt="Photo du piano droit 2" description="Description du piano droit 2" price="50"/>
+            <Piano name="Piano droit 3" photo="/pianos/piano-exemple-3.jpg" alt="Photo du piano droit 3" description="Description du piano droit 3" price="100"/>
+            <Piano name="Piano droit 4" photo="/pianos/piano-exemple-4.jpg" alt="Photo du piano droit 4" description="Description du piano droit 4" price="200"/>
         </section>
     );
 };

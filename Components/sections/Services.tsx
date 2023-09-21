@@ -3,7 +3,7 @@ import React from "react";
 const Services: React.FC = () => {
 
     return (
-        <div id="prestations">Mes prestations sont bla bla bla</div>
+        <div id="services-et-prestations">Contenu de la section Services et prestations</div>
     );
 };
 
