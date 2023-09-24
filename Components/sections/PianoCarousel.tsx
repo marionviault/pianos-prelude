@@ -1,6 +1,7 @@
 import React from "react";
-import Piano, {PianoProps} from "./../Piano";
+import Piano from "./../Piano";
 import PianosJSON from "./../../pianos.json"
+import {PianoProps} from "../../interfaces/piano";
 
 const PianoCarousel: React.FC = () => {
 
