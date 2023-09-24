@@ -9,24 +9,24 @@
     },
     {
       "name": "Post 2",
-      "photo": "/pianos/piano-exemple-1.jpg",
+      "photo": "/pianos/piano-exemple-2.jpg",
       "alt": "test",
       "description": "This is the full description of post 2",
-      "price": "350"
+      "price": "280"
     },
     {
       "name": "Post 3",
-      "photo": "/pianos/piano-exemple-1.jpg",
+      "photo": "/pianos/piano-exemple-3.jpg",
       "alt": "test",
       "description": "This is the full description of post 3",
-      "price": "350"
+      "price": "150"
     },
     {
       "name": "Post 4",
-      "photo": "/pianos/piano-exemple-1.jpg",
+      "photo": "/pianos/piano-exemple-4.jpg",
       "alt": "test",
       "description": "This is the full description of post 4",
-      "price": "350"
+      "price": "500"
     }
   ]
 }
