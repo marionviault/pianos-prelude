@@ -1,13 +1,6 @@
 import React from "react";
-import Link from 'next/link';
-
-export interface PianoProps {
-    name: string;
-    photo: string;
-    alt: string;
-    description: string;
-    price: string;
-}
+import {PianoProps} from "../interfaces/piano";
+//import Link from 'next/link';
 
 const Piano: React.FC<PianoProps> = (piano: PianoProps) => {
     return (
@@ -20,11 +13,11 @@ const Piano: React.FC<PianoProps> = (piano: PianoProps) => {
             <div className="basis-3/5 text-sm">
                 <div className="uppercase">{piano.name}</div>
 
-                <div>{piano.description.substring(0, 130)}...</div>
+                <div>{piano.description}</div>
 
                 <div>{piano.price} €</div>
 
-                <Link href={`/piano/${piano.name}`}>Voir plus</Link>
+                {/*<Link href={`/piano/${piano.name}`}>Voir plus</Link>*/}
             </div>
 
         </div>
