@@ -17,8 +17,7 @@ function PianoApp({Component, pageProps}: AppProps) {
                 <link rel="icon" href="./piano-icon.png"/>
             </Head>
 
-            <div className="flex justify-center py-8 bg-[#E3E7EC] min-h-screen">
-                <div className="">
+            <div className="py-8 bg-[#E3E7EC] min-h-screen">
 
                     <Navigation/>
 
@@ -28,7 +27,6 @@ function PianoApp({Component, pageProps}: AppProps) {
 
                     <Footer/>
 
-                </div>
             </div>
 
         </>
