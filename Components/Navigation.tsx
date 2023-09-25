@@ -1,18 +1,18 @@
 import Link from "next/link";
-import {NextRouter, useRouter} from "next/router";
+import { NextRouter, useRouter } from "next/router";
 import styles from "../styles/Navigation.module.scss";
 import React from "react";
-import {Disclosure} from '@headlessui/react'
-import {Bars3Icon, XMarkIcon} from '@heroicons/react/24/outline'
+import { Disclosure } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from "next/image";
-import {navItem} from "../interfaces/navigation";
+import { navItem } from "../interfaces/navigation";
 
 const NAVIGATION: navItem[] = [
-    {name: 'Services et prestations', href: '/#services-et-prestations', current: false},
-    {name: 'À propos', href: '/#about', current: false},
-    {name: 'Témoignages', href: '/#temoignages', current: false},
-    {name: 'Contact', href: '/#contact', current: false},
-    {name: 'Pianos en vente', href: '/#pianos', current: false},
+    { name: 'À propos', href: '/#a-propos', current: false },
+    { name: 'Services et prestations', href: '/#services-et-prestations', current: false },
+    { name: 'Pianos en vente', href: '/#pianos-en-vente', current: false },
+    { name: 'Témoignages', href: '/#temoignages', current: false },
+    { name: 'Contact', href: '/#contact', current: false },
 ]
 
 function classNames(...classes: string[]): string {
@@ -24,10 +24,10 @@ export default function Navigation(): JSX.Element {
     const ROUTER: NextRouter = useRouter();
 
     return (
-        <Disclosure as="nav" className="bg-gray-800">
-            {({open}) => (
+        <Disclosure as="header" className="bg-gray-800 sticky top-0 z-10">
+            {({ open }) => (
                 <>
-                    <div className={`${styles.navigation} mx-auto max-w-7xl px-2 sm:px-6 lg:px-8`}>
+                    <nav className={`${styles.navigation} mx-auto max-w-7xl px-2 sm:px-6 lg:px-8`}>
                         <div className="relative flex h-16 items-center justify-between">
 
                             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -70,7 +70,7 @@ export default function Navigation(): JSX.Element {
                             </div>
 
                         </div>
-                    </div>
+                    </nav>
 
                     <Disclosure.Panel className="sm:hidden">
                         <div className="space-y-1 px-2 pb-3 pt-2">
@@ -90,6 +90,5 @@ export default function Navigation(): JSX.Element {
                 </>
             )}
         </Disclosure>
-    )
-}
-
+    );
+};
