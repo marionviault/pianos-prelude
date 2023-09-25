@@ -53,7 +53,7 @@ export default function Navigation(): JSX.Element {
                                         {NAVIGATION.map((navItem: navItem) => (
                                             <div key={navItem.name}
                                                  className={ROUTER.pathname === navItem.href ? styles.active : ""}>
-                                                <Link href={navItem.href}>
+                                                <Link legacyBehavior href={navItem.href}>
                                                     <a className={classNames(
                                                         navItem.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                                                         'rounded-md px-3 py-2 text-sm font-medium'

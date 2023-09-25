@@ -1,34 +1,38 @@
-import Button from "./../Button";
 import React, {useState} from "react";
 
 const ContactForm: React.FC = () => {
 
-    const [subject, setSubject] = useState('antoine');
+    const [subject, setSubject] = useState('');
+    const [body, setBody] = useState('');
 
-    function handleSubject(event: { target: { value: React.SetStateAction<string>; }; }) {
-        setSubject(event.target.value)
+    function handleSubject(event: { target: { value: React.SetStateAction<string>; }; }): void {
+        setSubject(event.target.value);
+    }
+
+    function handleBody(event: { target: { value: React.SetStateAction<string>; }; }): void {
+        setBody(event.target.value);
     }
 
     return (
-        <form id="contact" className="flex">
+        <section id="contact">
 
-            <div className="inline-flex basis-3/4 border-2 border-slate-400 rounded-lg">
+            <h2>Contact</h2>
 
-                <input className="w-full p-2 rounded-lg" type="email" placeholder="example@gmail.com"/>
+            <form className="flex border-2 border-slate-400 rounded-lg">
 
-                <input className="w-full p-2 rounded-lg" type="text" placeholder="Devis, Contact, Vente, ..."
+                <input className="w-full p-2 rounded-lg" type="text" placeholder="Devis, Achat, Vente"
                        onChange={handleSubject}/>
 
-                <input className="w-full p-2 rounded-lg" type="text" placeholder="Mon message"/>
+                <textarea className="w-full p-2 rounded-lg" placeholder="Mon message"
+                          onChange={handleBody}/>
 
-                <a href={`"mailto:vitkov@live.fr?subject=${subject}&body=Bla bla bla"`}>Mail to</a>
+                <button className="rounded-lg py-2 px-4 bg-slate-400 border-2 border-slate-400 float-right text-white">
+                    <a href={`mailto:vitkov@live.fr?subject=${subject}&body=${encodeURIComponent(body)}`}>Envoyer</a>
+                </button>
 
-                <Button label="Envoyer"
-                        classList="bg-slate-400 border-2 border-slate-400 rounded-lg float-right text-white"/>
+            </form>
 
-            </div>
-
-        </form>
+        </section>
     );
 };
 
