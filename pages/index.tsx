@@ -1,22 +1,25 @@
-import ContactForm from "../Components/sections/ContactForm";
 import React from "react";
-import PianoCarousel from "../Components/sections/PianoCarousel";
+import HeroHeader from "../Components/sections/HeroHeader";
+import ServicesAndBenefits from "../Components/sections/ServicesAndBenefits";
 import About from "../Components/sections/About";
-import Services from "../Components/sections/Services";
+import Reinsurance from "../Components/sections/Reinsurance";
+import Testimonies from "../Components/sections/Testimonies";
+import Contact from "../Components/sections/Contact";
+import Trusted from "../Components/sections/Trusted";
+import PianosForSale from "../Components/sections/PianosForSale";
 
 const Home: React.FC = () => {
 
     return (
         <>
-            <h1>{"Page d'accueil"}</h1>
-            <br/>
-            <Services/>
-            <br/>
-            <ContactForm/>
-            <br/>
-            <PianoCarousel/>
-            <br/>
+            <HeroHeader/>
             <About/>
+            <ServicesAndBenefits/>
+            <Reinsurance/>
+            <PianosForSale/>
+            <Testimonies/>
+            <Contact/>
+            <Trusted/>
         </>
     )
 };

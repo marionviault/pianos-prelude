@@ -14,14 +14,13 @@ function PianoApp({Component, pageProps}: AppProps) {
                 <title>Pianos Prélude, au service de la musique</title>
                 <meta name="description" content="Robin Lefèvre, technicien accordeur de pianos en région parisienne"/>
                 <meta name="keywords" content="piano pianos accordeur accordement paris région parisienne musique instrument"/>
-                <link rel="icon" href="./piano-icon.png"/>
+                <link rel="icon" href="/piano-icon.png"/>
             </Head>
 
-            <div className="py-8 bg-[#E3E7EC] min-h-screen">
+            <div className="bg-[#E3E7EC] min-h-screen">
 
-                    <Navigation/>
-
-                    <main className=" pl-12 pr-12">
+                    <main>
+                        <Navigation/>
                         <Component {...pageProps} />
                     </main>
 
