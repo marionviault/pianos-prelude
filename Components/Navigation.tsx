@@ -43,8 +43,9 @@ export default function Navigation(): JSX.Element {
                             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
 
                                 <div className="flex flex-shrink-0 items-center">
-                                    <img className="h-8 w-auto" src="/piano-icon.png" alt="Your Company" width="50"
-                                           height="50"/>
+                                    <Image className="h-8 w-auto"
+                                           src="/piano-icon.png" alt="Logo représentant des touches de piano"
+                                           width="50" height="50"/>
                                     <p className="pl-3 text-sm font-medium text-white">Pianos Prélude</p>
                                 </div>
 
