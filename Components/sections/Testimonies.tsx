@@ -2,13 +2,14 @@ import React from "react";
 
 const Testimonies: React.FC = () => {
     return (
-        <section id="temoignages" className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+        <section id="temoignages" className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-16 lg:px-8">
 
             <div className="mx-auto max-w-2xl lg:text-center">
                 <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                     Témoignages
                 </h2>
             </div>
+
             <div className="mx-auto max-w-2xl lg:max-w-4xl">
                 <figure className="mt-10">
                     <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
