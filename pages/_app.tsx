@@ -1,4 +1,4 @@
-import './../styles/globals.css'
+import './../styles/globals.scss'
 import Navigation from "./../Components/Navigation";
 import Head from "next/head";
 import Footer from "./../Components/Footer";
