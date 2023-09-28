@@ -6,6 +6,7 @@ import {
     ShoppingCartIcon,
     WrenchScrewdriverIcon
 } from '@heroicons/react/24/outline'
+import styles from "../../styles/ServicesAndBenefits.module.scss";
 
 interface ServiceProps {
     name: string,
@@ -13,7 +14,7 @@ interface ServiceProps {
     icon: any
 }
 
-const services: Array<ServiceProps> = [
+const SERVICES: Array<ServiceProps> = [
     {
         name: 'Accord',
         description:
@@ -51,7 +52,7 @@ const services: Array<ServiceProps> = [
 
 const ServicesAndBenefits: React.FC = () => {
     return (
-        <section id="services-et-prestations">
+        <section id="services-et-prestations" className={`${styles.service}`}>
 
             <div className="bg-white py-2 sm:py-8">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -67,7 +68,7 @@ const ServicesAndBenefits: React.FC = () => {
                     </div>
                     <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
                         <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-                            {services.map((service: ServiceProps) => (
+                            {SERVICES.map((service: ServiceProps) => (
                                 <div key={service.name} className="relative pl-16">
                                     <h3 className="text-base font-semibold leading-7 text-gray-900">
                                         <div
