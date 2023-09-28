@@ -5,7 +5,7 @@ import styles from "../../styles/Reinsurance.module.scss";
 const Reinsurance: React.FC = () => {
     return (
         <section id="pourquoi-me-faire-confiance"
-                 className={`${styles.reinsurance} bg-white pt-20 sm:py-16 mx-auto max-w-7xl px-6 lg:px-8`}>
+                 className={`${styles.reinsurance} bg-white px-6 pt-20 sm:py-8 lg:px-8`}>
 
             <div >
 

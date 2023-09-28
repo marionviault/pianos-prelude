@@ -1,12 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import {bitter} from "../../pages/_app";
 import styles from "../../styles/About.module.scss";
 
 const About: React.FC = () => {
     return (
         <section id="a-propos"
-                 className={`${styles.about} bg-white px-4 pt-20 sm:px-6 sm:py-16 lg:max-w-7xl lg:grid-cols-2 lg:px-8`}>
+                 className={`${styles.about} bg-white px-6 pt-20 sm:py-8 lg:px-8`}>
 
             <div
                 className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16">

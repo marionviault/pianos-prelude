@@ -9,7 +9,7 @@ const PianosForSale: React.FC = () => {
     const PIANOS: Array<PianoProps> = PianosJSON.pianos;
 
     return (
-        <section id="pianos-en-vente" className={`${styles.pianos} px-4 pt-20 sm:px-6 sm:py-16 lg:max-w-7xl lg:px-8`}>
+        <section id="pianos-en-vente" className={`${styles.pianos} px-6 pt-20 sm:py-8 lg:px-8`}>
             <div className="mx-auto max-w-2xl">
 
                 <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
