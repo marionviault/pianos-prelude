@@ -5,9 +5,9 @@ import styles from "../../styles/Reinsurance.module.scss";
 const Reinsurance: React.FC = () => {
     return (
         <section id="pourquoi-me-faire-confiance"
-                 className={`${styles.reinsurance} bg-white`}>
+                 className={`${styles.reinsurance} bg-white pt-20 sm:py-16 mx-auto max-w-7xl px-6 lg:px-8`}>
 
-            <div className="py-24 sm:py-16 mx-auto max-w-7xl px-6 lg:px-8">
+            <div >
 
                 <h2 className="mx-auto max-w-2xl lg:text-center text-center text-lg font-semibold leading-8">
                     Pourquoi moi

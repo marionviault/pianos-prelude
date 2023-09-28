@@ -32,8 +32,8 @@ const Footer: React.FC = () => {
 
 
     return (
-        <Disclosure as="footer" className={`${styles.footer}`}>
-                    <nav className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <Disclosure as="footer" className={`${styles.footer} px-2 sm:px-6 lg:px-8`}>
+                    <nav className="mx-auto max-w-7xl">
                         <div className="relative flex h-16 items-center justify-between">
                             <div className="flex flex-1 items-center justify-center sm:items-stretch">
 
