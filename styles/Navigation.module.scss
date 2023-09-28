@@ -1,17 +1,12 @@
-$blue: #94a3b8;
-$blue2: #567094;
-$white: #ffffff;
-$grey: #f5f5f5f5;
-$black1: #222222;
-$black2: #999999;
+@import 'colors.module';
 
 .navigation {
 
-  .active {
+  background-color: $mainBG;
+  color: $mainColor;
 
-    a {
-      color: $blue2;
-    }
-
+  a:hover {
+    color: $mainColor;
+    background-color: $secondaryColor;
   }
 }

@@ -1,5 +1,9 @@
-$main: red;
+$mainBG: white;
+$mainColor: black;
+$secondaryColor: green;
 
 :export {
-  main: $main;
+  mainBG: $mainBG;
+  mainColor: $mainColor;
+  secondaryColor : $secondaryColor;
 }
