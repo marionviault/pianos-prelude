@@ -1,11 +1,12 @@
 import React from "react";
+import styles from "../../styles/Testimonies.module.scss";
 
 const Testimonies: React.FC = () => {
     return (
-        <section id="temoignages" className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-16 lg:px-8">
+        <section id="temoignages" className={`${styles.testimonies} relative isolate overflow-hidden bg-white px-6 py-24 sm:py-16 lg:px-8`}>
 
             <div className="mx-auto max-w-2xl lg:text-center">
-                <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
                     Témoignages
                 </h2>
             </div>
