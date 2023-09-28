@@ -52,9 +52,8 @@ const SERVICES: Array<ServiceProps> = [
 
 const ServicesAndBenefits: React.FC = () => {
     return (
-        <section id="services-et-prestations" className={`${styles.service}`}>
+        <section id="services-et-prestations" className={`${styles.service} px-6 pt-20 sm:py-8 lg:px-8`}>
 
-            <div className="py-2 sm:py-8">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl lg:text-center">
                         {/*<p className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</p>*/}
@@ -83,7 +82,6 @@ const ServicesAndBenefits: React.FC = () => {
                         </dl>
                     </div>
                 </div>
-            </div>
 
         </section>
     );
