@@ -1,0 +1,12 @@
+@import 'variables.module';
+
+.service {
+
+  h2 {
+    font-family: $fontBitter;
+  }
+
+  .icon {
+    background-color: $yellowPP;
+  }
+}

@@ -1,0 +1,16 @@
+$whitePP: white;
+$blackPP: black;
+$greyPP: #5a7477;
+$darkGreyPP: #28494c;
+$yellowPP: #ad9c44;
+
+$fontBitter: Bitter;
+
+:export {
+  whitePP: $whitePP;
+  blackPP: $blackPP;
+  greyPP : $greyPP;
+  darkGreyPP: $darkGreyPP;
+  yellowPP: $yellowPP;
+  fontBitter: $fontBitter;
+}
