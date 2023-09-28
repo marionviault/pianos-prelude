@@ -54,7 +54,7 @@ const ServicesAndBenefits: React.FC = () => {
     return (
         <section id="services-et-prestations" className={`${styles.service}`}>
 
-            <div className="bg-white py-2 sm:py-8">
+            <div className="py-2 sm:py-8">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl lg:text-center">
                         {/*<p className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</p>*/}
