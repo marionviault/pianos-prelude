@@ -1,9 +1,13 @@
-$mainBG: white;
-$mainColor: black;
-$secondaryColor: green;
+$whitePP: white;
+$blackPP: black;
+$greyPP: #5a7477;
+$darkGreyPP: #28494c;
+$yellowPP: #ad9c44;
 
 :export {
-  mainBG: $mainBG;
-  mainColor: $mainColor;
-  secondaryColor : $secondaryColor;
+  whitePP: $whitePP;
+  blackPP: $blackPP;
+  greyPP : $greyPP;
+  darkGreyPP: $darkGreyPP;
+  yellowPP: $yellowPP;
 }
