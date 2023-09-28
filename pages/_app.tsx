@@ -5,8 +5,9 @@ import Footer from "./../Components/Footer";
 import React from "react";
 import {AppProps} from "next/app";
 import {Bitter} from '@next/font/google';
+import {NextFont} from "@next/font";
 
-export const bitter = Bitter({
+export const bitter: NextFont = Bitter({
     subsets: ['latin'],
     weight: ['500', '700'],
 });
