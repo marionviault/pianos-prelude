@@ -4,6 +4,12 @@ import Head from "next/head";
 import Footer from "./../Components/Footer";
 import React from "react";
 import {AppProps} from "next/app";
+import {Bitter} from '@next/font/google';
+
+export const bitter = Bitter({
+    subsets: ['latin'],
+    weight: ['500', '700'],
+});
 
 function PianoApp({Component, pageProps}: AppProps) {
 

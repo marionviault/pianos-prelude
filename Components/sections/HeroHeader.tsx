@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import styles from "../../styles/HeroHeader.module.scss";
+import {bitter} from "../../pages/_app";
+
 
 const HeroHeader: React.FC = () => {
     return (
@@ -13,7 +15,7 @@ const HeroHeader: React.FC = () => {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-7xl lg:mx-0">
 
-                    <h1 className="text-4xl text-center font-bold tracking-tight text-white sm:text-6xl">
+                    <h1 className={`${bitter.className} text-4xl text-center font-bold tracking-tight text-white sm:text-6xl`}>
                         PIANOS PRELUDE<br/>au service de la musique
                     </h1>
 
