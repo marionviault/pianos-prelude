@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import styles from "../../styles/Trusted.module.scss";
 
 const Trusted: React.FC = () => {
     return (
-        <section id="partenaires-de-confiance" className="bg-white py-24 sm:py-8">
+        <section id="partenaires-de-confiance" className={`${styles.trusted} bg-white py-24 sm:py-8`}>
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
-                    <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
+                    <h2 className="text-center text-lg font-semibold leading-8">
                         Partenaires de confiance
                     </h2>
 
