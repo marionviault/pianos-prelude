@@ -8,7 +8,7 @@ const About: React.FC = () => {
                  className={`${styles.about} bg-white px-6 pt-20 sm:py-8 lg:px-8`}>
 
             <div
-                className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16">
+                className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 lg:max-w-7xl lg:grid-cols-2">
 
                 <div>
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
