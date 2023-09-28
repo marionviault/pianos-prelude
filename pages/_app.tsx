@@ -20,18 +20,19 @@ function PianoApp({Component, pageProps}: AppProps) {
             <Head>
                 <title>Pianos Prélude, au service de la musique</title>
                 <meta name="description" content="Robin Lefèvre, technicien accordeur de pianos en région parisienne"/>
-                <meta name="keywords" content="piano pianos accordeur accordement paris région parisienne musique instrument"/>
+                <meta name="keywords"
+                      content="piano pianos accordeur accordement paris région parisienne musique instrument"/>
                 <link rel="icon" href="/piano-icon.png"/>
             </Head>
 
             <div className="bg-[#E3E7EC] min-h-screen">
 
-                    <main>
-                        <Navigation/>
-                        <Component {...pageProps} />
-                    </main>
+                <main>
+                    <Navigation/>
+                    <Component {...pageProps} />
+                </main>
 
-                    <Footer/>
+                <Footer/>
 
             </div>
 
