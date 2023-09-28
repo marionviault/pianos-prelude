@@ -6,6 +6,7 @@ import {Disclosure} from '@headlessui/react'
 import {Bars3Icon, XMarkIcon} from '@heroicons/react/24/outline'
 import Image from "next/image";
 import {navItem} from "../interfaces/navigation";
+import {bitter} from "../pages/_app";
 
 const NAVIGATION: navItem[] = [
     {name: 'À propos', href: '/#a-propos', current: false},
@@ -46,7 +47,7 @@ export default function Navigation(): JSX.Element {
                                     <Image className="h-8 w-auto"
                                            src="/piano-icon.png" alt="Logo représentant des touches de piano"
                                            width="50" height="50"/>
-                                    <p className="pl-3 text-sm font-medium">Pianos Prélude</p>
+                                    <p className={`${bitter.className} pl-3 text-sm font-medium`}>Pianos Prélude</p>
                                 </div>
 
                                 <div className="hidden sm:ml-6 sm:block">
