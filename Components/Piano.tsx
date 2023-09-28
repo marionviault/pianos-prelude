@@ -10,20 +10,20 @@ const Piano: React.FC<PianoProps> = (piano: PianoProps) => {
                 <Image src={piano.photo} alt={piano.alt} width="400" height="400"
                        className="h-full w-full object-cover object-center lg:h-full lg:w-full"/>
             </div>
-            <div className="mt-4 flex justify-between">
-                <div>
-                    <h3 className="text-sm">
+            <div className="mt-4 text-sm">
+                <div className="flex justify-between">
+                    <h3>
                         {/*<a href={`/piano/${piano.name}`}>*/}
                         <span aria-hidden="true" className="absolute inset-0"/>
                         {piano.name}
                         {/*</a>*/}
                     </h3>
-                    <p className="mt-1 text-sm">{piano.description}</p>
+                    <p className="font-medium">
+                        {piano.price}
+                        <span> €</span>
+                    </p>
                 </div>
-                <p className="text-sm font-medium">
-                    {piano.price}
-                    <span> €</span>
-                </p>
+                <p className="mt-1">{piano.description}</p>
             </div>
         </div>
     );
