@@ -1,12 +1,13 @@
 import Link from 'next/link'
 import React from "react";
-import styles from "../styles/Navigation.module.scss";
 import { Disclosure } from "@headlessui/react";
+import styles from "../styles/Footer.module.scss";
 
 const Footer: React.FC = () => {
 
+
     return (
-        <Disclosure as="footer" className="bg-gray-800">
+        <Disclosure as="footer" className={`${styles.footer}`}>
             {({ open }) => (
                 <>
                     <nav className={`${styles.navigation} mx-auto max-w-7xl px-2 sm:px-6 lg:px-8`}>
