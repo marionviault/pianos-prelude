@@ -2,11 +2,11 @@
 
 .navigation {
 
-  background-color: $mainBG;
-  color: $mainColor;
+  background-color: $whitePP;
+  color: $blackPP;
 
   a:hover {
-    color: $mainColor;
-    background-color: $secondaryColor;
+    color: $whitePP;
+    background-color: $greyPP;
   }
 }
