@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../styles/HeaderHeader.module.scss";
+import styles from "../../styles/HeroHeader.module.scss";
 
 const HeroHeader: React.FC = () => {
     return (
-        <section className="relative isolate overflow-hidden bg-gray-900 py-20 sm:py-32">
+        <section className={`${styles.heroHeader} relative isolate overflow-hidden py-20 sm:py-32`}>
 
             <Image src="https://images.pexels.com/photos/6073196/pexels-photo-6073196.jpeg"
-                   className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+                   className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center opacity-50"
                    alt="Photo de piano" width="2000" height="1000"/>
 
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
