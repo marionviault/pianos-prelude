@@ -6,7 +6,7 @@ import {bitter} from "../../pages/_app";
 
 const HeroHeader: React.FC = () => {
     return (
-        <section className={`${styles.heroHeader} relative isolate overflow-hidden py-20 sm:py-32`}>
+        <section id="hero-banner" className={`${styles.heroHeader} relative isolate overflow-hidden py-20 sm:py-32`}>
 
             <Image src="https://images.pexels.com/photos/6073196/pexels-photo-6073196.jpeg"
                    className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center opacity-50"

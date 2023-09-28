@@ -30,7 +30,7 @@ export default function Navigation(): JSX.Element {
     const ROUTER: NextRouter = useRouter();
 
     return (
-        <Disclosure as="header" className={`${styles.navigation} sticky top-0 z-10`}>
+        <Disclosure as="header" className={`${styles.navigation} flex sticky top-0 z-10`}>
             {({open}) => (
                 <>
                     <nav className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -48,12 +48,14 @@ export default function Navigation(): JSX.Element {
 
                             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
 
-                                <div className="flex flex-shrink-0 items-center">
-                                    <Image className="h-8 w-auto"
-                                           src="/piano-icon.png" alt="Logo représentant des touches de piano"
-                                           width="50" height="50"/>
-                                    <p className={`${bitter.className} pl-3 text-sm font-medium`}>Pianos Prélude</p>
-                                </div>
+                                <Link href="/#hero-banner">
+                                    <div className="flex flex-shrink-0 items-center">
+                                        <Image className="h-8 w-auto"
+                                               src="/piano-icon.png" alt="Logo représentant des touches de piano"
+                                               width={50} height={50}/>
+                                        <p className={`${bitter.className} pl-3 text-sm font-medium`}>Pianos Prélude</p>
+                                    </div>
+                                </Link>
 
                                 <div className="hidden sm:ml-6 sm:block">
                                     <div className="flex space-x-4">
