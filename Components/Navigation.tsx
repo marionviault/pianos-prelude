@@ -5,10 +5,15 @@ import React from "react";
 import {Disclosure} from '@headlessui/react'
 import {Bars3Icon, XMarkIcon} from '@heroicons/react/24/outline'
 import Image from "next/image";
-import {navItem} from "../interfaces/navigation";
 import {bitter} from "../pages/_app";
 
-const NAVIGATION: navItem[] = [
+interface ItemProps {
+    name: string,
+    href: string,
+    current: boolean,
+}
+
+const NAVIGATION: Array<ItemProps> = [
     {name: 'À propos', href: '/#a-propos', current: false},
     {name: 'Services et prestations', href: '/#services-et-prestations', current: false},
     {name: 'Pianos en vente', href: '/#pianos-en-vente', current: false},
@@ -52,13 +57,13 @@ export default function Navigation(): JSX.Element {
 
                                 <div className="hidden sm:ml-6 sm:block">
                                     <div className="flex space-x-4">
-                                        {NAVIGATION.map((navItem: navItem) => (
-                                            <div key={navItem.name}
-                                                 className={ROUTER.pathname === navItem.href ? styles.active : ""}>
-                                                <Link legacyBehavior href={navItem.href}>
+                                        {NAVIGATION.map((item: ItemProps) => (
+                                            <div key={item.name}
+                                                 className={ROUTER.pathname === item.href ? styles.active : ""}>
+                                                <Link legacyBehavior href={item.href}>
                                                     <a className='rounded-md px-3 py-2 text-sm font-medium'
-                                                       aria-current={navItem.current ? 'page' : undefined}>
-                                                        {navItem.name}
+                                                       aria-current={item.current ? 'page' : undefined}>
+                                                        {item.name}
                                                     </a>
                                                 </Link>
                                             </div>
@@ -73,14 +78,14 @@ export default function Navigation(): JSX.Element {
 
                     <Disclosure.Panel className="sm:hidden">
                         <div className="space-y-1 px-2 pb-3 pt-2">
-                            {NAVIGATION.map((navItem: navItem) => (
-                                <Disclosure.Button key={navItem.name} as="a" href={navItem.href}
+                            {NAVIGATION.map((item: ItemProps) => (
+                                <Disclosure.Button key={item.name} as="a" href={item.href}
                                                    className={classNames(
-                                                       navItem.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                                       item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                                                        'block rounded-md px-3 py-2 text-base font-medium'
                                                    )}
-                                                   aria-current={navItem.current ? 'page' : undefined}>
-                                    {navItem.name}
+                                                   aria-current={item.current ? 'page' : undefined}>
+                                    {item.name}
                                 </Disclosure.Button>
                             ))}
                         </div>
