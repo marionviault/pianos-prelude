@@ -5,7 +5,7 @@ import styles from "../../styles/Trusted.module.scss";
 interface PartnerProps {
     name: string,
     logo: string,
-    width: number
+    width: number,
     height: number
 }
 
