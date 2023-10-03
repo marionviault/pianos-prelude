@@ -15,7 +15,7 @@ const Piano: React.FC<PianoProps> = (piano: PianoProps) => {
                     <h3>
                         {/*<a href={`/piano/${piano.name}`}>*/}
                         <span aria-hidden="true" className="absolute inset-0"/>
-                        {piano.name}
+                        {`${piano.model} - ${piano.brand}`}
                         {/*</a>*/}
                     </h3>
                     <p className="font-medium">
@@ -23,7 +23,12 @@ const Piano: React.FC<PianoProps> = (piano: PianoProps) => {
                         <span> €</span>
                     </p>
                 </div>
-                <p className="mt-1">{piano.description}</p>
+                <p className="mt-1">
+                    {piano.year}
+                    {piano.color}
+                    {piano.size}
+                    {piano.description}
+                </p>
             </div>
         </div>
     );
