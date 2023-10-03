@@ -1,9 +1,7 @@
-import Link from 'next/link'
 import React from "react";
 import {Disclosure} from "@headlessui/react";
 import styles from "../styles/Footer.module.scss";
 import Image from "next/image";
-import {log} from "util";
 
 interface SocialMediaProps {
     name: string,
@@ -13,19 +11,9 @@ interface SocialMediaProps {
 
 const SOCIAL_MEDIAS: Array<SocialMediaProps> = [
     {
-        name: 'facebook',
-        image: 'facebook-logo.png',
-        url: 'https://google.com',
-    },
-    {
         name: 'instagram',
         image: 'instagram-logo.png',
-        url: 'https://facebook.com',
-    },
-    {
-        name: 'twitter',
-        image: 'twitter-logo.png',
-        url: 'https://wikipedia.com',
+        url: 'https://www.instagram.com/robinpiano_/',
     },
 ]
 
@@ -41,10 +29,10 @@ const Footer: React.FC = () => {
                         <ul className="flex space-x-4">
                             {SOCIAL_MEDIAS.map((socialMedia: SocialMediaProps, index: React.Key) => (
                                 <li key={index}>
-                                    <Link legacyBehavior href={socialMedia.url}>
+                                    <a href={socialMedia.url}>
                                         <Image src={socialMedia.image} alt={`Logo de ${socialMedia.name}`}
                                                width={60} height={60}/>
-                                    </Link>
+                                    </a>
                                 </li>
                             ))}
                         </ul>
