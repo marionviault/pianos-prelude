@@ -15,28 +15,28 @@ const PARTNERS: Array<PartnerProps> = [
         name: 'Quintessence',
         url: 'https://pianoquintessence.com/',
         logo: '/partner/quintessence.png',
-        width: 158,
+        width: 252,
         height: 48
     },
     {
         name: 'DP Pianos',
         url: 'https://dppianos.fr/',
-        logo: 'https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg',
-        width: 158,
+        logo: '/partner/dp-pianos.svg',
+        width: 79,
         height: 48
     },
     {
         name: 'Studios 92',
         url: '',
-        logo: 'https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg',
+        logo: '/partner/studios-92.jpg',
         width: 158,
         height: 48
     },
     {
-        name: 'HelpPianos',
+        name: 'HelPianos',
         url: 'https://www.helpianos-transport.com/',
-        logo: 'https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg',
-        width: 158,
+        logo: '/partner/helpianos.png',
+        width: 144,
         height: 48
     }
 ]
