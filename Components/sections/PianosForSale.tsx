@@ -9,7 +9,9 @@ const PianosForSale: React.FC = () => {
     const PIANOS: Array<PianoProps> = PianosJSON.pianos;
 
     return (
-        <section id="pianos-en-vente" className={`${styles.pianos} px-6 pt-20 sm:py-8 lg:px-8`}>
+        <section className={`${styles.pianos} px-6 pt-20 sm:py-8 lg:px-8`}>
+            <span className="anchor" id="pianos-en-vente"></span>
+
             <div className="mx-auto max-w-2xl lg:max-w-7xl lg:grid-cols-2">
 
                 <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">

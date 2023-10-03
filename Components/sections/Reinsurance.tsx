@@ -38,7 +38,8 @@ const REINSURANCE_ELEMENTS: Array<ReinsuranceElementProps> = [
 
 const Trusted: React.FC = () => {
     return (
-        <section id="pourquoi-me-faire-confiance" className={`${styles.reinsurance} bg-white pt-20 px-6 lg:px-8 sm:py-8`}>
+        <section className={`${styles.reinsurance} bg-white pt-20 px-6 lg:px-8 sm:py-8`}>
+            <span className="anchor" id="pourquoi-me-faire-confiance"></span>
 
             <div className="mx-auto max-w-7xl">
 

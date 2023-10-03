@@ -22,7 +22,8 @@ const TESTIMONIES: Array<TestimonyProps> = [
 
 const Testimonies: React.FC = () => {
     return (
-        <section id="temoignages" className={`${styles.testimonies} relative isolate overflow-hidden bg-white px-6 pt-20 sm:py-16 lg:px-8`}>
+        <section className={`${styles.testimonies} relative isolate overflow-hidden bg-white px-6 pt-20 sm:py-16 lg:px-8`}>
+            <span className="anchor" id="temoignages"></span>
 
             <div className="mx-auto max-w-2xl lg:text-center">
                 <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
