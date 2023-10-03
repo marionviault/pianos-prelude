@@ -4,8 +4,8 @@ import Head from "next/head";
 import Footer from "./../Components/Footer";
 import React from "react";
 import {AppProps} from "next/app";
-import {Bitter} from '@next/font/google';
-import {NextFont} from "@next/font";
+import {Bitter} from "next/font/google";
+import {NextFont} from "next/font";
 
 export const bitter: NextFont = Bitter({
     subsets: ['latin'],
