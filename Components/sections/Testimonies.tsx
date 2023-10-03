@@ -32,7 +32,7 @@ const Testimonies: React.FC = () => {
             </div>
 
             {TESTIMONIES.map((testimony: TestimonyProps) => (
-                <div className="mx-auto max-w-2xl lg:max-w-4xl">
+                <div key={testimony.author} className="mx-auto max-w-2xl lg:max-w-4xl">
                     <figure className="mt-10">
                         <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
                             <p>
