@@ -15,7 +15,8 @@ const Contact: React.FC = () => {
     }
 
     return (
-        <section id="contact" className={`${styles.contact} isolate px-6 pt-20 sm:py-8 lg:px-8`}>
+        <section className={`${styles.contact} isolate px-6 pt-20 sm:py-8 lg:px-8`}>
+            <span className="anchor" id="contact"></span>
 
             <div className="mx-auto max-w-2xl text-center">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">

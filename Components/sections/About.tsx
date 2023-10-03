@@ -4,8 +4,8 @@ import styles from "../../styles/About.module.scss";
 
 const About: React.FC = () => {
     return (
-        <section id="a-propos"
-                 className={`${styles.about} bg-white px-6 pt-20 sm:py-8 lg:px-8`}>
+        <section className={`${styles.about} bg-white px-6 pt-20 sm:py-8 lg:px-8`}>
+            <span className="anchor" id="a-propos"></span>
 
             <div
                 className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 lg:max-w-7xl lg:grid-cols-2">

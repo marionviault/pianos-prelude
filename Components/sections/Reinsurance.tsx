@@ -1,60 +1,66 @@
 import React from "react";
-import Image from "next/image";
 import styles from "../../styles/Reinsurance.module.scss";
+import { BellAlertIcon } from "@heroicons/react/24/outline";
 
-const Reinsurance: React.FC = () => {
+interface ReinsuranceElementProps {
+    name: string,
+    description: string,
+    icon: any
+}
+
+const REINSURANCE_ELEMENTS: Array<ReinsuranceElementProps> = [
+    {
+        name: 'Une formation pour une base solide',
+        description: 'Diplômé d’un Brevet des Métiers des Arts option piano.',
+        icon: BellAlertIcon
+    },
+    {
+        name: '10 ans d\'expérience',
+        description: 'J’ai travaillé en magasin, pour des conservatoires, des professionnels, de prestigieuses salles de concerts, des studios d’enregistrement ou encore des théâtres.',
+        icon: BellAlertIcon
+    },
+    {
+        name: 'Un musicien avant tout',
+        description: 'Un musicien passionné incarne un technicien exigeant : Profitez d’une écoute attentive à vos besoins et d’un travail soigné.',
+        icon: BellAlertIcon
+    },
+    {
+        name: 'Un réseau élargi',
+        description: 'Transporteurs, studios d’enregistrements, professeurs, salles de concerts, showroom et magasins de pianos.',
+        icon: BellAlertIcon
+    },
+    {
+        name: 'Eco- responsables à notre échelle',
+        description: 'Je me déplace majoritairement en transport en commun et en edpm lorsque cela m’est possible. Par ailleurs, je remets en état de sublimes pianos d’occasions qui ont encore de nombreuses années de musique à offrir.',
+        icon: BellAlertIcon
+    }
+]
+
+const Trusted: React.FC = () => {
     return (
-        <section id="pourquoi-me-faire-confiance"
-                 className={`${styles.reinsurance} bg-white px-6 pt-20 sm:py-8 lg:px-8`}>
+        <section className={`${styles.reinsurance} bg-white pt-20 px-6 lg:px-8 sm:py-8`}>
+            <span className="anchor" id="pourquoi-me-faire-confiance"></span>
 
-            <div >
+            <div className="mx-auto max-w-7xl">
 
-                <h2 className="mx-auto max-w-2xl lg:text-center text-center text-lg font-semibold leading-8">
+                <h2 className="text-center text-lg font-semibold leading-8">
                     Pourquoi moi
                 </h2>
 
                 <div
-                    className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-2 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-
-                    <div className="px-4 pb-4 pt-5 sm:p-6 sm:pb-4 sm:flex sm:items-start">
-                        <div
-                            className="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full sm:mx-0 sm:h-10 sm:w-10">
-                            <Image className="h-8 w-auto" width="50" height="50"
-                                   src="/piano-icon.png" alt="Logo représentant des touches de piano"/>
-                        </div>
-                        <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
-                            <p className="mt-2 text-sm">
-                                Fort de 10 ans d’expérience ou j’ai travaillé pour les entreprises,
-                                institutions, Conservatoires, théâtres, concerts, particuliers et pianistes
-                                professionnels.
-                                Titulaire d’un Brevet de Métier d’Art.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
-                        <div className="sm:flex sm:items-start">
-                            <div
-                                className="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full sm:mx-0 sm:h-10 sm:w-10">
-                                <Image className="h-8 w-auto" src="/piano-icon.png"
-                                       alt="Logo représentant des touches de piano" width="50" height="50"/>
-                            </div>
-                            <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
-                                <div className="mt-2">
-                                    <p className="text-sm">
-                                        Un musicien passionné et un technicien exigeant : bénéficiez d’une écoute
-                                        attentive à vos besoins et d’un travail soigné.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                    className="mx-auto mt-10 grid max-w-lg gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+                    {REINSURANCE_ELEMENTS.map((element: ReinsuranceElementProps) => (
+                         <div key={element.name}>
+                             <h3 className="text-2xl font-bold leading-9 tracking-tight">{element.name}</h3>
+                             <p className="text-base leading-7">{element.description}</p>
+                         </div>
+                    ))}
                 </div>
+
             </div>
 
         </section>
     );
 };
 
-export default Reinsurance;
+export default Trusted;
