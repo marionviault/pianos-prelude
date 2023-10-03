@@ -27,8 +27,8 @@ const PARTNERS: Array<PartnerProps> = [
     },
     {
         name: 'Studios 92',
-        url: '',
-        logo: '/partner/studios-92.jpg',
+        url: 'https://www.studiodemeudon.fr/',
+        logo: '/partner/studiomeudon.jpg',
         width: 158,
         height: 48
     },
