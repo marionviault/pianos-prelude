@@ -1,6 +1,20 @@
 import React from "react";
 import styles from "../../styles/Testimonies.module.scss";
 
+interface TestimonyProps {
+    quote: string,
+    author: string,
+    city: string
+}
+
+const TESTIMONIES: Array<TestimonyProps> = [
+    {
+        quote: 'quote',
+        author: 'author',
+        city: 'city'
+    }
+]
+
 const Testimonies: React.FC = () => {
     return (
         <section id="temoignages" className={`${styles.testimonies} relative isolate overflow-hidden bg-white px-6 pt-20 sm:py-16 lg:px-8`}>
