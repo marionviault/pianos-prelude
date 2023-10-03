@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../../styles/Trusted.module.scss";
+import styles from "../../styles/Partner.module.scss";
 
 interface PartnerProps {
     name: string,
@@ -41,7 +41,7 @@ const PARTNERS: Array<PartnerProps> = [
     }
 ]
 
-const Trusted: React.FC = () => {
+const Partner: React.FC = () => {
     return (
         <section id="partenaires-de-confiance" className={`${styles.trusted} bg-white pt-20 px-6 lg:px-8 sm:py-8`}>
 
@@ -68,4 +68,4 @@ const Trusted: React.FC = () => {
     );
 };
 
-export default Trusted;
+export default Partner;

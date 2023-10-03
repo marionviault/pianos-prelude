@@ -5,7 +5,7 @@ import About from "../Components/sections/About";
 import Reinsurance from "../Components/sections/Reinsurance";
 import Testimonies from "../Components/sections/Testimonies";
 import Contact from "../Components/sections/Contact";
-import Trusted from "../Components/sections/Trusted";
+import Partner from "../Components/sections/Partner";
 import PianosForSale from "../Components/sections/PianosForSale";
 
 const Home: React.FC = () => {
@@ -19,7 +19,7 @@ const Home: React.FC = () => {
             <PianosForSale/>
             <Testimonies/>
             <Contact/>
-            <Trusted/>
+            <Partner/>
         </>
     )
 };
