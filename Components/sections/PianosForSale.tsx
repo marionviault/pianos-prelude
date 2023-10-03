@@ -20,7 +20,7 @@ const PianosForSale: React.FC = () => {
 
                 <div>
                     Bénéficiez d’une remise en état complète et d’une préparation exhaustive sur d’excellents pianos
-                    d’occasions choisis par mes soins et d’un rapport qualité/prix imbattable.
+                    d’occasions choisis par mes soins et d’un rapport qualité-prix imbattable.
                     Mes années en entreprise m’ont permis de savoir quels pianos sont les plus pertinents à vous
                     proposer sur le plan mécanique, acoustique, et aussi économique pour combler vos projets.
                 </div>

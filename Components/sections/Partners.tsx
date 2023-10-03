@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../../styles/Partner.module.scss";
+import styles from "../../styles/Partners.module.scss";
 
 interface PartnerProps {
     name: string,
@@ -27,8 +27,8 @@ const PARTNERS: Array<PartnerProps> = [
     },
     {
         name: 'Studios 92',
-        url: '',
-        logo: '/partner/studios-92.jpg',
+        url: 'https://www.studiodemeudon.fr/',
+        logo: '/partner/studiomeudon.jpg',
         width: 158,
         height: 48
     },
@@ -41,7 +41,7 @@ const PARTNERS: Array<PartnerProps> = [
     }
 ]
 
-const Partner: React.FC = () => {
+const Partners: React.FC = () => {
     return (
         <section id="partenaires-de-confiance" className={`${styles.trusted} bg-white pt-20 px-6 lg:px-8 sm:py-8`}>
 
@@ -68,4 +68,4 @@ const Partner: React.FC = () => {
     );
 };
 
-export default Partner;
+export default Partners;
