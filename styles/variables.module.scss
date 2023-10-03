@@ -4,7 +4,7 @@ $greyPP: #5a7477;
 $darkGreyPP: #28494c;
 $yellowPP: #ad9c44;
 
-$fontBitter: Bitter;
+$font: Bitter;
 
 :export {
   whitePP: $whitePP;
@@ -12,5 +12,5 @@ $fontBitter: Bitter;
   greyPP : $greyPP;
   darkGreyPP: $darkGreyPP;
   yellowPP: $yellowPP;
-  fontBitter: $fontBitter;
+  fontBitter: $font;
 }
