@@ -28,12 +28,10 @@ const PianosForSale: React.FC = () => {
                 <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                     {PIANOS.map((piano: PianoProps, index: React.Key) => {
                         return (
-                            <Piano key={index}
-                                   name={piano.name}
-                                   photo={piano.photo}
-                                   alt={piano.alt}
-                                   description={piano.description}
-                                   price={piano.price}/>
+                            <Piano key={index} model={piano.model} photo={piano.photo} alt={piano.alt}
+                                   description={piano.description} price={piano.price} brand={piano.brand}
+                                   color={piano.color} manufacturing={piano.manufacturing} size={piano.size}
+                                   year={piano.year}/>
                         )
                     })}
                 </div>
