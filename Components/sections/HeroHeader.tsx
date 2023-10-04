@@ -9,7 +9,7 @@ const HeroHeader: React.FC = () => {
         <section className={`${styles.heroHeader} relative isolate overflow-hidden py-20 sm:py-32 text-white`}>
             <span className="anchor" id="hero-banner"></span>
 
-            <Image src="https://images.pexels.com/photos/6073196/pexels-photo-6073196.jpeg"
+            <Image src="/pianos/piano-exemple-1.jpg"
                    className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center opacity-50"
                    alt="Photo de piano" width="2000" height="1000"/>
 
