@@ -9,4 +9,5 @@ export interface PianoProps {
     manufacturing: string;
     size: string;
     description: string;
+    sold: boolean;
 }
