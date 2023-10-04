@@ -12,23 +12,39 @@ const Piano: React.FC<PianoProps> = (piano: PianoProps) => {
             </div>
             <div className="mt-4 text-sm">
                 <div className="flex justify-between">
-                    <h3>
-                        {/*<a href={`/piano/${piano.name}`}>*/}
-                        <span aria-hidden="true" className="absolute inset-0"/>
-                        {`${piano.model} - ${piano.brand}`}
-                        {/*</a>*/}
-                    </h3>
+                    <p className="mt-1">
+                        Marque : {piano.brand}
+                    </p>
                     <p className="font-medium">
                         {piano.price}
                         <span> €</span>
                     </p>
                 </div>
-                <p className="mt-1">
-                    {piano.year}
-                    {piano.color}
-                    {piano.size}
-                    {piano.description}
-                </p>
+                {piano.model && (
+                    <p className="mt-1">
+                        Modèle : {piano.model}
+                    </p>
+                )}
+                {piano.year && (
+                    <p className="mt-1">
+                        Année : {piano.year}
+                    </p>
+                )}
+                {piano.color && (
+                    <p className="mt-1">
+                        Finition : {piano.color}
+                    </p>
+                )}
+                {piano.size && (
+                    <p className="mt-1">
+                        Dimensions : {piano.size}
+                    </p>
+                )}
+                {piano.description && (
+                    <p className="mt-1">
+                        Description : {piano.description}
+                    </p>
+                )}
             </div>
         </div>
     );
