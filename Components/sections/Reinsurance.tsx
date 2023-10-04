@@ -10,28 +10,22 @@ interface ReinsuranceElementProps {
 
 const REINSURANCE_ELEMENTS: Array<ReinsuranceElementProps> = [
     {
-        name: 'Une formation pour une base solide',
-        description: 'Diplômé d’un Brevet des Métiers des Arts option piano.',
-        icon: BellAlertIcon
-    },
-    {
-        name: '10 ans d\'expérience',
-        description: 'J’ai travaillé en magasin, pour des conservatoires, des professionnels, de prestigieuses salles de concerts, des studios d’enregistrement ou encore des théâtres.',
-        icon: BellAlertIcon
-    },
-    {
-        name: 'Un musicien avant tout',
-        description: 'Un musicien passionné incarne un technicien exigeant : Profitez d’une écoute attentive à vos besoins et d’un travail soigné.',
+        name: 'Expérience et réseau',
+        description: 'Fort de 10 ans d’expérience et diplômé d’un Brevet des Métiers des Arts option piano : \n' +
+            'j’ai travaillé en magasin, pour les conservatoires, les particuliers ou bien les professionnels. \n' +
+            'J’ai également travaillé pour de prestigieuses salles de concerts tel que l’Olympia, le sunset sunside, …\n' +
+            'des studios d’enregistrement, Studio Besco, le studio de Meudon ou encore des théâtres ; théâtre de l’athénée, théâtre de la porte saint martin, le Grand Rex… \n' +
+            'Un musicien passionné incarne un technicien exigeant : bénéficiez/profitez d’une écoute attentive à vos besoins et d’un travail soigné.',
         icon: BellAlertIcon
     },
     {
         name: 'Un réseau élargi',
-        description: 'Transporteurs, studios d’enregistrements, professeurs, salles de concerts, showroom et magasins de pianos.',
+        description: 'Transporteurs, studios d’enregistrements, professeurs, salles de concerts, showroom et magasins de pianos, …',
         icon: BellAlertIcon
     },
     {
         name: 'Eco- responsables à notre échelle',
-        description: 'Je me déplace majoritairement en transport en commun et en edpm lorsque cela m’est possible. Par ailleurs, je remets en état de sublimes pianos d’occasions qui ont encore de nombreuses années de musique à offrir.',
+        description: 'Inscrivons-nous dans une démarche écologique en faisant appel à mes services/en travaillant ensemble, en effet je me déplace majoritairement en transport en commun et en edpm lorsque cela m’est possible. Par ailleurs, je remets en état de sublimes pianos d’occasions qui ont encore de nombreuses années de musique à offrir, ce qui participe à limiter (à notre échelle) une éventuelle surproduction/surconsommation d’instruments neufs.',
         icon: BellAlertIcon
     }
 ]
@@ -48,7 +42,7 @@ const Trusted: React.FC = () => {
                 </h2>
 
                 <div
-                    className="mx-auto mt-10 grid max-w-lg gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+                    className="mx-auto mt-10 grid max-w-lg gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-3 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                     {REINSURANCE_ELEMENTS.map((element: ReinsuranceElementProps) => (
                          <div key={element.name}>
                              <h3 className="text-2xl font-bold leading-9 tracking-tight">{element.name}</h3>
