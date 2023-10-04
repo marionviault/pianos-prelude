@@ -47,12 +47,6 @@ const PianosForSale: React.FC = () => {
 
                     <>
 
-                        <div className="mt-6">
-                            <span className="see-more" onClick={handleMorePianosVisibility}>
-                                En voir {morePianosVisibility ? 'moins' : 'plus'}
-                            </span>
-                        </div>
-
                         {morePianosVisibility && (
 
                             <div
@@ -68,6 +62,12 @@ const PianosForSale: React.FC = () => {
                             </div>
 
                         )}
+
+                        <div className="mt-6">
+                            <span className="see-more" onClick={handleMorePianosVisibility}>
+                                En voir {morePianosVisibility ? 'moins' : 'plus'}
+                            </span>
+                        </div>
 
                     </>
 
