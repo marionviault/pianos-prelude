@@ -52,9 +52,9 @@ const Partners: React.FC = () => {
                 </h2>
 
                 <div
-                    className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+                    className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-4">
                     {PARTNERS.map((partner: PartnerProps, index: React.Key) => (
-                        <a href={partner.url} key={index}>
+                        <a href={partner.url} key={index} target="_blank">
                             <Image className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
                                    src={partner.logo} alt={`Logo de ${partner.name}`} width={partner.width}
                                    height={partner.height}/>
