@@ -5,13 +5,21 @@ on:
         branches: [ staging ]
 
 jobs:
-    SSH-Connexion:
+    Staging-Deploy:
 
         runs-on: ubuntu-latest
-
+        
         steps:
             -   uses: actions/checkout@v4
-
+            
+            -   name: Set Node.js 18.17.1
+                uses: actions/setup-node@v3
+                with:
+                    node-version: 18.17.1
+            
+            -   name: YARN install / export
+                run: yarn install && yarn export && ls -la && pwd && whoami
+            
             -   name: SSH connection && git pull
                 uses: appleboy/ssh-action@v1.0.0
                 with:
@@ -23,13 +31,6 @@ jobs:
                         cd /var/www/pianos-prelude-staging
                         git switch staging
                         git pull
-                        yarn install
-
-            -   name: Set Node.js 18.17.1
-                uses: actions/setup-node@v3
-                with:
-                    node-version: 18.17.1
-
-            -   name: YARN install
-                run: yarn install && whoami && pwd
+                        rm -rf out/
+                        ls -la
 
