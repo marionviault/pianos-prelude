@@ -1,0 +1,32 @@
+name: Staging-Deploy
+
+on:
+    push:
+        branches: [ staging ]
+
+jobs:
+    SSH-Connexion:
+        
+        runs-on: ubuntu-latest
+        
+        steps:
+            -   name: Repository checkout
+                uses: actions/checkout@v2
+            
+            -   name: test antoine
+                run: echo ${{ secrets.STAGING_HOST }}
+                
+            -   name: SSH connection && staging deploy
+                uses: appleboy/ssh-action@v0.1.4
+                with:
+                    host: ${{ secrets.STAGING_HOST }}
+                    username: ${{ secrets.STAGING_USER }}
+                    key: ${{ secrets.STAGING_SSH_KEY }}
+                    port: ${{ secrets.STAGING_PORT }}
+                    script: |
+                        cd /var/www/pianos-prelude-staging
+                        git switch staging
+                        git pull
+                        nvm use
+                        yarn install
+                        yarn export
