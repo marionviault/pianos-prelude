@@ -13,17 +13,6 @@ jobs:
             -   name: Repository checkout
                 uses: actions/checkout@v4
             
-            -   name: Set Node.js 18.17.1
-                uses: actions/setup-node@v3
-                with:
-                    node-version: 18.17.1
-            
-            -   name: test antoine
-                run: node --version
-            
-            -   name: Run install
-                uses: borales/actions-yarn@v4
-            
             -   name: SSH connection && staging deploy
                 uses: appleboy/ssh-action@v1.0.0
                 with:
@@ -33,9 +22,26 @@ jobs:
                     port: ${{ secrets.STAGING_PORT }}
                     script: |
                         cd /var/www/pianos-prelude-staging
-                        ls -la
                         git switch staging
                         git pull
-                        yarn -v
-                        yarn install
-                        yarn export
+            
+            -   name: Set Node.js 18.17.1
+                uses: actions/setup-node@v3
+                with:
+                    node-version: 18.17.1
+            
+            -   name: NODE VERSION
+                run: node --version
+            
+            -   name: YARN install
+                uses: borales/actions-yarn@v4
+                with:
+                    cmd: install
+                    dir: '/var/www/pianos-prelude-staging'
+                    
+                    
+            -   name: YARN export
+                uses: borales/actions-yarn@v4
+                with:
+                    cmd: export
+                    dir: '/var/www/pianos-prelude-staging'
