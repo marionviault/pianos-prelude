@@ -13,6 +13,14 @@ jobs:
             -   name: Repository checkout
                 uses: actions/checkout@v4
             
+            -   name: Set Node.js 18.17.1
+                uses: actions/setup-node@v3
+                with:
+                    node-version: 18.17.1
+            
+            -   name: test antoine
+                run: node --version
+            
             -   name: SSH connection && staging deploy
                 uses: appleboy/ssh-action@v1.0.0
                 with:
@@ -25,6 +33,5 @@ jobs:
                         ll
                         git switch staging
                         git pull
-                        nvm use
                         yarn install
                         yarn export
