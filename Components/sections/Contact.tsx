@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import styles from "../../styles/Contact.module.scss";
 
 const Contact: React.FC = () => {
 
-    const [ name, setName ] = useState('');
-    const [ phone, setPhone ] = useState('');
-    const [ message, setMessage ] = useState('');
+    const [name, setName] = useState('');
+    const [phone, setPhone] = useState('');
+    const [message, setMessage] = useState('');
 
     function handleName(event: { target: { value: React.SetStateAction<string>; }; }): void {
         setName(event.target.value);
@@ -45,21 +45,21 @@ const Contact: React.FC = () => {
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
 
                     <div>
-                        <label htmlFor="first-name" className="block text-sm font-semibold leading-6">
+                        <label htmlFor="name" className="block text-sm font-semibold leading-6">
                             Nom / Société
                         </label>
                         <div className="mt-2.5">
-                            <input type="text" name="first-name" autoComplete="given-name" onChange={handleName}
+                            <input type="text" name="name" autoComplete="name" onChange={handleName}
                                    className="block w-full rounded-md border-0 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"/>
                         </div>
                     </div>
 
                     <div>
-                        <label htmlFor="phone-number" className="block text-sm font-semibold leading-6">
+                        <label htmlFor="phone" className="block text-sm font-semibold leading-6">
                             Téléphone
                         </label>
                         <div className="mt-2.5">
-                            <input type="tel" name="first-name" autoComplete="tel" required onChange={handlePhone}
+                            <input type="tel" name="phone" autoComplete="tel" required onChange={handlePhone}
                                    className="block w-full rounded-md border-0 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"/>
                         </div>
                     </div>
@@ -84,7 +84,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div className="mt-10">
                     <button type="submit"
-                           className="block w-full rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm">
+                            className="block w-full rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm">
                         Me contacter
                     </button>
                 </div>
