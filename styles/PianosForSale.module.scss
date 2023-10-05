@@ -7,4 +7,9 @@
   h2 {
     font-family: $font;
   }
+
+  .button:hover {
+    background-color: rgba(white,.5);
+    border-color: transparent;
+  }
 }

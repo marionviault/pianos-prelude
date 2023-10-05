@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import Piano from "./../Piano";
 import PianosJSON from "./../../pianos.json"
-import { PianoProps } from "../../interfaces/piano";
+import {PianoProps} from "../../interfaces/piano";
 import styles from "../../styles/PianosForSale.module.scss";
+import Button from "../Button";
 
 const PianosForSale: React.FC = () => {
 
     const FIRST_PIANOS: Array<PianoProps> = PianosJSON.pianos.slice(0, 3);
     const MORE_PIANOS: Array<PianoProps> = PianosJSON.pianos.slice(3);
 
-    const [ morePianosVisibility, setMorePianosVisibility ] = useState(false);
+    const [morePianosVisibility, setMorePianosVisibility] = useState(false);
 
     const handleMorePianosVisibility = () => {
         setMorePianosVisibility((current) => !current);
@@ -63,10 +64,13 @@ const PianosForSale: React.FC = () => {
 
                         )}
 
-                        <div className="mt-6">
-                            <span className="see-more" onClick={handleMorePianosVisibility}>
-                                En voir {morePianosVisibility ? 'moins' : 'plus'}
-                            </span>
+                        <div className="flex justify-center gap-10">
+                            <Button classList={`${styles.button} see-more`} onClick={handleMorePianosVisibility}
+                                    label={`En voir ${morePianosVisibility ? 'moins' : 'plus'}`}/>
+                            <a className={`${styles.button} bg-white text-black button rounded-lg mt-6 py-2 px-4 border`}
+                               href="#contact">
+                                Me contacter
+                            </a>
                         </div>
 
                     </>
