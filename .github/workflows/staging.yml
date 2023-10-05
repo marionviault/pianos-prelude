@@ -51,7 +51,7 @@ jobs:
                 uses: appleboy/scp-action@v0.1.4
                 with:
                     host: ${{ secrets.STAGING_HOST }}
-                    username: ${{ secrets.STAGING_USERNAME }}
+                    username: ${{ secrets.STAGING_USER }}
                     key: ${{ secrets.STAGING_SSH_KEY }}
                     port: ${{ secrets.STAGING_PORT }}
                     source: distfiles/*
