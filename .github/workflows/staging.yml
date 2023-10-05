@@ -6,13 +6,12 @@ on:
 
 jobs:
     SSH-Connexion:
-        
+
         runs-on: ubuntu-latest
-        
+
         steps:
-            -   name: Repository checkout
-                uses: actions/checkout@v4
-            
+            -   uses: actions/checkout@v4
+
             -   name: SSH connection && staging deploy
                 uses: appleboy/ssh-action@v1.0.0
                 with:
@@ -24,24 +23,18 @@ jobs:
                         cd /var/www/pianos-prelude-staging
                         git switch staging
                         git pull
-            
+
             -   name: Set Node.js 18.17.1
                 uses: actions/setup-node@v3
                 with:
                     node-version: 18.17.1
-            
-            -   name: NODE VERSION
-                run: node --version
-            
+
             -   name: YARN install
                 uses: borales/actions-yarn@v4
                 with:
                     cmd: install
-                    dir: '/var/www/pianos-prelude-staging'
-                    
-                    
+
             -   name: YARN export
                 uses: borales/actions-yarn@v4
                 with:
                     cmd: export
-                    dir: '/var/www/pianos-prelude-staging'
