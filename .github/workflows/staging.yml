@@ -6,11 +6,12 @@ on:
 
 jobs:
     Staging-Deploy:
-
+        
         runs-on: ubuntu-latest
         
         steps:
-            -   uses: actions/checkout@v4
+            -   name: Checkout
+                uses: actions/checkout@v4
             
             -   name: Set Node.js 18.17.1
                 uses: actions/setup-node@v3
@@ -20,17 +21,38 @@ jobs:
             -   name: YARN install / export
                 run: yarn install && yarn export && ls -la && pwd && whoami
             
-            -   name: SSH connection && git pull
-                uses: appleboy/ssh-action@v1.0.0
+            #            -   name: SSH connection && git pull
+            #                uses: appleboy/ssh-action@v1.0.0
+            #                with:
+            #                    host: ${{ secrets.STAGING_HOST }}
+            #                    username: ${{ secrets.STAGING_USER }}
+            #                    key: ${{ secrets.STAGING_SSH_KEY }}
+            #                    port: ${{ secrets.STAGING_PORT }}
+            #                    script: |
+            #                        cd /var/www/pianos-prelude-staging
+            #                        git switch staging
+            #                        git pull
+            #                        rm -rf out/
+            #                        ls -la
+            
+            -   name: UPLOAD OUT/ DIRECTORY
+                uses: actions/upload-artifact@v3
+                with:
+                    name: out-dir
+                    path: out/
+            
+            -   name: DOWNLOAD OUT/ DIRECTORY
+                uses: actions/download-artifact@v3
+                with:
+                    name: out-dir
+                    path: distfiles
+            
+            -   name: COPY OUR DIR TO SERVER
+                uses: appleboy/scp-action@v0.1.4
                 with:
                     host: ${{ secrets.STAGING_HOST }}
-                    username: ${{ secrets.STAGING_USER }}
+                    username: ${{ secrets.STAGING_USERNAME }}
                     key: ${{ secrets.STAGING_SSH_KEY }}
                     port: ${{ secrets.STAGING_PORT }}
-                    script: |
-                        cd /var/www/pianos-prelude-staging
-                        git switch staging
-                        git pull
-                        rm -rf out/
-                        ls -la
-
+                    source: distfiles/*
+                    target: /var/www/pianos-prelude-staging
