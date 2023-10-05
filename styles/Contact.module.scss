@@ -12,7 +12,13 @@
   button {
     background-color: $secondaryColorPP;
   }
+
   button:hover {
     background-color: $darkSecondaryColorPP;
+  }
+
+  input, textarea {
+    --tw-ring-color: #3c6973 !important;
+
   }
 }
