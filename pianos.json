@@ -4,16 +4,56 @@
       "model": "EC 109",
       "brand": "Young Chang",
       "photo": "/pianos/piano-exemple-1.jpg",
+      "alt": "Photo du Young Chang EC 109",
+      "year": 1986,
+      "color": "Noir laqué",
+      "price": 1900,
+      "manufacturing": "Coréenne",
+      "size": "H109xL135xP50",
+      "description": "Un beau piano",
+      "sold": false
+    },
+    {
+      "model": "U-118",
+      "brand": "Young Chang",
+      "photo": "/pianos/piano-exemple-1.jpg",
+      "alt": "Photo du Young Chang U-118",
+      "year": 1986,
+      "color": "Acajou",
+      "price": 2400,
+      "manufacturing": "Coréenne",
+      "size": "H118xL145xP57",
+      "description": "Un autre beau piano",
+      "sold": false
+    },
+    {
+      "model": "Chippendale 108",
+      "brand": "Schimmel",
+      "photo": "/pianos/piano-exemple-1.jpg",
+      "alt": "Photo du Schimmel Chippendale 108",
+      "year": 1975,
+      "color": "Rose fluo",
+      "price": 3800,
+      "manufacturing": "Allemande",
+      "size": "H108xL145xP54",
+      "description": "Mécanique Renner",
+      "sold": false
+    },
+    {
+      "model": "test 1",
+      "brand": "Young Chang",
+      "photo": "/pianos/piano-exemple-1.jpg",
       "alt": "Photo du",
       "year": 1986,
       "color": "Noir laqué",
       "price": 1900,
       "manufacturing": "Coréenne",
       "size": "H109xL135xP50",
-      "description": ""
+      "description": "Encore un beau piano",
+      "sold": true
     },
     {
-      "model": "U-118",
+      "model": "test 2",
       "brand": "Young Chang",
       "photo": "/pianos/piano-exemple-1.jpg",
       "alt": "Photo du",
@@ -22,19 +62,34 @@
       "price": 2400,
       "manufacturing": "Coréenne",
       "size": "H118xL145xP57",
-      "description": ""
+      "description": "Et un autre beau piano !",
+      "sold": true
     },
     {
-      "model": "Chippendale 108",
+      "model": "test 3",
       "brand": "Schimmel",
       "photo": "/pianos/piano-exemple-1.jpg",
       "alt": "Photo du",
-      "year": 1975,
-      "color": "Rose fluo",
-      "price": 3800,
-      "manufacturing": "Allemande",
-      "size": "H108xL145xP54",
-      "description": "Mécanique Renner"
+      "year": 1986,
+      "color": "Acajou",
+      "price": 2400,
+      "manufacturing": "Coréenne",
+      "size": "H118xL145xP57",
+      "description": "Et un autre beau piano !",
+      "sold": true
+    },
+    {
+      "model": "test 4",
+      "brand": "Schimmel",
+      "photo": "/pianos/piano-exemple-1.jpg",
+      "alt": "Photo du",
+      "year": 1986,
+      "color": "Acajou",
+      "price": 2400,
+      "manufacturing": "Coréenne",
+      "size": "H118xL145xP57",
+      "description": "Et un autre beau piano !",
+      "sold": true
     }
   ]
 }

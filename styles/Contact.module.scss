@@ -9,10 +9,10 @@
     font-family: $font;
   }
 
-  a {
-    background-color: $greyPP;
+  button {
+    background-color: $mainColorPP;
   }
-  a:hover {
-    background-color: $darkGreyPP;
+  button:hover {
+    background-color: $darkMainColorPP;
   }
 }

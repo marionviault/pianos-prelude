@@ -1,8 +1,8 @@
 import React from "react";
 import {
-    BellAlertIcon,
-    CogIcon,
     MusicalNoteIcon,
+    CogIcon,
+    SparklesIcon,
     ShoppingCartIcon,
     WrenchScrewdriverIcon
 } from '@heroicons/react/24/outline'
@@ -18,7 +18,7 @@ const SERVICES: Array<ServiceProps> = [
     {
         name: 'Accord',
         description: 'L’accord est indispensable au bon entretien de votre piano ainsi que pour le confort de vos oreilles. Il est recommandé de le faire chaque année. Cette étape prend en moyenne 1h30 et consiste à remettre les cordes du piano juste par rapport à un diapason donné.',
-        icon: BellAlertIcon,
+        icon: MusicalNoteIcon,
     },
     {
         name: 'Réglage',
@@ -30,7 +30,7 @@ const SERVICES: Array<ServiceProps> = [
         name: 'Harmonisation',
         description:
             'Pour sublimer le son de votre piano et parfaire le timbre de votre instrument ( timbre = identité sonore) en fonction de ses besoins ou de vos désirs : son trop métallique ou trop sourd, ...',
-        icon: MusicalNoteIcon,
+        icon: SparklesIcon,
     },
     {
         name: 'Expertise et réparation',
@@ -49,13 +49,13 @@ const SERVICES: Array<ServiceProps> = [
 
 const ServicesAndBenefits: React.FC = () => {
     return (
-        <section className={`${styles.service} px-6 pt-20 sm:py-8 lg:px-8`}>
+        <section className={`${styles.service} px-6 pt-20 sm:py-8 lg:px-8 text-black`}>
             <span className="anchor" id="services-et-prestations"></span>
 
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:text-center">
                     {/*<p className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</p>*/}
-                    <h2 id="title" className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                    <h2 id="title" className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
                         Services & prestations
                     </h2>
                     {/*<p className="mt-6 text-lg leading-8 text-gray-600">*/}
@@ -67,14 +67,14 @@ const ServicesAndBenefits: React.FC = () => {
                     <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
                         {SERVICES.map((service: ServiceProps) => (
                             <div key={service.name} className="relative pl-16">
-                                <h3 className="text-base font-semibold leading-7 text-gray-900">
+                                <h3 className="text-base font-semibold leading-7">
                                     <div
                                         className={`${styles.icon} absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg`}>
                                         <service.icon className="h-6 w-6 text-white" aria-hidden="true"/>
                                     </div>
                                     {service.name}
                                 </h3>
-                                <dd className="mt-2 text-base leading-7 text-gray-600">{service.description}</dd>
+                                <dd className="mt-2 text-base leading-7">{service.description}</dd>
                             </div>
                         ))}
                     </dl>
