@@ -6,8 +6,8 @@ import styles from "../../styles/PianosForSale.module.scss";
 
 const PianosForSale: React.FC = () => {
 
-    const FIRST_PIANOS: Array<PianoProps> = PianosJSON.pianos.slice(0, 4);
-    const MORE_PIANOS: Array<PianoProps> = PianosJSON.pianos.slice(4);
+    const FIRST_PIANOS: Array<PianoProps> = PianosJSON.pianos.slice(0, 3);
+    const MORE_PIANOS: Array<PianoProps> = PianosJSON.pianos.slice(3);
 
     const [ morePianosVisibility, setMorePianosVisibility ] = useState(false);
 
@@ -32,7 +32,7 @@ const PianosForSale: React.FC = () => {
                     proposer sur le plan mécanique, acoustique, et aussi économique pour combler vos projets.
                 </div>
 
-                <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+                <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
                     {FIRST_PIANOS.map((piano: PianoProps, index: React.Key) => {
                         return (
                             <Piano key={index} model={piano.model} photo={piano.photo} alt={piano.alt}
@@ -50,7 +50,7 @@ const PianosForSale: React.FC = () => {
                         {morePianosVisibility && (
 
                             <div
-                                className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+                                className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
                                 {MORE_PIANOS.map((piano: PianoProps, index: React.Key) => {
                                     return (
                                         <Piano key={index} model={piano.model} photo={piano.photo} alt={piano.alt}

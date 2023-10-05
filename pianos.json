@@ -41,7 +41,7 @@
     },
     {
       "model": "test 1",
-      "brand": "OLD",
+      "brand": "Young Chang",
       "photo": "/pianos/piano-exemple-1.jpg",
       "alt": "Photo du",
       "year": 1986,
@@ -54,7 +54,7 @@
     },
     {
       "model": "test 2",
-      "brand": "OLD",
+      "brand": "Young Chang",
       "photo": "/pianos/piano-exemple-1.jpg",
       "alt": "Photo du",
       "year": 1986,
@@ -67,7 +67,7 @@
     },
     {
       "model": "test 3",
-      "brand": "OLD",
+      "brand": "Schimmel",
       "photo": "/pianos/piano-exemple-1.jpg",
       "alt": "Photo du",
       "year": 1986,
@@ -80,7 +80,7 @@
     },
     {
       "model": "test 4",
-      "brand": "OLD",
+      "brand": "Schimmel",
       "photo": "/pianos/piano-exemple-1.jpg",
       "alt": "Photo du",
       "year": 1986,
