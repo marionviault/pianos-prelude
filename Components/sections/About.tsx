@@ -46,16 +46,29 @@ const About: React.FC = () => {
                 </div>
 
                 <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
-                    <Image src="/robin/repair.jpg"
-                           alt="Pphoto de Robin Lefevbre entrain d'accorder un piano"
-                           className="rounded-lg bg-gray-100" width="280" height="280"/>
-                    <Image src="/deco/repair.jpg" alt=""
-                           className="rounded-lg bg-gray-100" width="280" height="280"/>
-                    <Image src="/deco/workbench.jpg" alt=""
-                           className="rounded-lg bg-gray-100" width="280" height="280"/>
-                    <Image src="/robin/concert.jpg"
-                           alt="Photo de Romain Lefevbre entrain de reparer un piano dans une salle de concert"
-                           className="rounded-lg bg-gray-100" width="280" height="280"/>
+
+                    <figure className="overflow-hidden flex">
+                        <Image src="/robin/repair.jpg"
+                               alt="Pphoto de Robin Lefevbre entrain d'accorder un piano"
+                               className="object-cover rounded-lg" width={50} height={50}/>
+                    </figure>
+
+                    <figure className="overflow-hidden flex">
+                        <Image src="/deco/repair.jpg" alt=""
+                               className="object-cover rounded-lg" width={50} height={50}/>
+                    </figure>
+
+                    <figure className="overflow-hidden flex">
+                        <Image src="/deco/workbench.jpg" alt=""
+                               className="object-cover rounded-lg" width={50} height={50}/>
+                    </figure>
+
+                    <figure className="overflow-hidden flex">
+                        <Image src="/robin/concert.jpg"
+                               alt="Photo de Romain Lefevbre entrain de reparer un piano dans une salle de concert"
+                               className="object-cover rounded-lg" width={50} height={50}/>
+                    </figure>
+
                 </div>
 
             </div>
