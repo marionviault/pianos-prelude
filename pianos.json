@@ -3,7 +3,11 @@
     {
       "model": "EC 109",
       "brand": "Young Chang",
-      "photo": "/pianos/piano-exemple-1.jpg",
+      "photos": [
+        { "src": "/pianos/piano-exemple-1.jpg" },
+        { "src": "/pianos/piano-exemple-2.jpg" },
+        { "src": "/pianos/piano-exemple-3.jpg" }
+      ],
       "alt": "Photo du Young Chang EC 109",
       "year": 1986,
       "color": "Noir laqué",
@@ -16,7 +20,10 @@
     {
       "model": "U-118",
       "brand": "Young Chang",
-      "photo": "/pianos/piano-exemple-1.jpg",
+      "photos": [
+        { "src": "/pianos/piano-exemple-1.jpg" },
+        { "src": "/pianos/piano-exemple-2.jpg" }
+      ],
       "alt": "Photo du Young Chang U-118",
       "year": 1986,
       "color": "Acajou",
@@ -29,7 +36,9 @@
     {
       "model": "Chippendale 108",
       "brand": "Schimmel",
-      "photo": "/pianos/piano-exemple-1.jpg",
+      "photos": [
+        { "src": "/pianos/piano-exemple-1.jpg" }
+      ],
       "alt": "Photo du Schimmel Chippendale 108",
       "year": 1975,
       "color": "Rose fluo",
@@ -42,7 +51,9 @@
     {
       "model": "test 1",
       "brand": "Young Chang",
-      "photo": "/pianos/piano-exemple-1.jpg",
+      "photos": [
+        { "src": "/pianos/piano-exemple-1.jpg" }
+      ],
       "alt": "Photo du",
       "year": 1986,
       "color": "Noir laqué",
@@ -55,7 +66,9 @@
     {
       "model": "test 2",
       "brand": "Young Chang",
-      "photo": "/pianos/piano-exemple-1.jpg",
+      "photos": [
+        { "src": "/pianos/piano-exemple-1.jpg" }
+      ],
       "alt": "Photo du",
       "year": 1986,
       "color": "Acajou",
@@ -68,7 +81,9 @@
     {
       "model": "test 3",
       "brand": "Schimmel",
-      "photo": "/pianos/piano-exemple-1.jpg",
+      "photos": [
+        { "src": "/pianos/piano-exemple-1.jpg" }
+      ],
       "alt": "Photo du",
       "year": 1986,
       "color": "Acajou",
@@ -81,7 +96,9 @@
     {
       "model": "test 4",
       "brand": "Schimmel",
-      "photo": "/pianos/piano-exemple-1.jpg",
+      "photos": [
+        { "src": "/pianos/piano-exemple-1.jpg" }
+      ],
       "alt": "Photo du",
       "year": 1986,
       "color": "Acajou",
