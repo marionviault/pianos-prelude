@@ -22,11 +22,14 @@ const TESTIMONIES: Array<TestimonyProps> = [
 ]
 
 const PARAMETERS = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 1500,
     autoplay: true,
     autoplaySpeed: 15000,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
+    fade: true,
+    pauseOnHover: false,
+    draggable: false
 }
 
 const Testimonies: React.FC = () => {
