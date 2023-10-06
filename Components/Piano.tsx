@@ -12,7 +12,7 @@ const Piano: React.FC<PianoProps> = (piano: PianoProps) => {
                         VENDU
                     </span>
                 )}
-                <Image src={piano.photo} alt={piano.alt} width="400" height="400"
+                <Image src={piano.photo} alt={`Photo du ${piano.model}`} width="400" height="400"
                        className="h-full w-full object-cover object-center lg:h-full lg:w-full"/>
             </div>
             <div className="mt-4 text-sm">

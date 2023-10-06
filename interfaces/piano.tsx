@@ -2,7 +2,6 @@ export interface PianoProps {
     model: string;
     brand: string;
     photo: string;
-    alt: string;
     year: number;
     color: string,
     price: number;
