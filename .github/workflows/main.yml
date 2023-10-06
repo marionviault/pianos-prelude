@@ -1,0 +1,45 @@
+name: Main-Build-Deploy
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  Main-Build-Deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      -   name: CHECKOUT
+          uses: actions/checkout@v4
+
+      -   name: SET NODEJS 18.17.1
+          uses: actions/setup-node@v3
+          with:
+            node-version: 18.17.1
+
+      -   name: YARN INSTALL && EXPORT
+          run: yarn install && yarn export
+
+      -   name: UPLOAD OUT/ DIRECTORY
+          uses: actions/upload-artifact@v3
+          with:
+            name: out-dir
+            path: out/
+
+      -   name: DOWNLOAD OUT/ DIRECTORY
+          uses: actions/download-artifact@v3
+          with:
+            name: out-dir
+            path: out
+
+      -   name: COPY OUT DIR TO SERVER
+          uses: appleboy/scp-action@v0.1.4
+          with:
+            host: ${{ secrets.MAIN_HOST }}
+            username: ${{ secrets.MAIN_USER }}
+            key: ${{ secrets.MAIN_SSH_KEY }}
+            port: ${{ secrets.MAIN_PORT }}
+            source: out/*
+            target: /var/www/pianos-prelude-prod
+            rm: true
