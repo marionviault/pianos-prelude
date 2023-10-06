@@ -8,9 +8,9 @@ const Banner: React.FC = () => {
         <section className={`${styles.heroHeader} relative isolate overflow-hidden py-20 sm:py-32 text-white`}>
             <span className="anchor" id="hero-banner"></span>
 
-            <Image src="/deco/repair.jpg"
-                   className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center opacity-50"
-                   alt="Photo de piano" width={2000} height={1000}/>
+            <Image
+                className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center opacity-40"
+                src="/deco/banner.jpg" alt="Photo de piano" width={0} height={432}/>
 
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-7xl lg:mx-0">
