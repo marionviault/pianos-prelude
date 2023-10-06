@@ -1,10 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../../styles/HeroHeader.module.scss";
+import styles from "../../styles/Banner.module.scss";
 import {bitter} from "../../pages/_app";
 
-
-const HeroHeader: React.FC = () => {
+const Banner: React.FC = () => {
     return (
         <section className={`${styles.heroHeader} relative isolate overflow-hidden py-20 sm:py-32 text-white`}>
             <span className="anchor" id="hero-banner"></span>
@@ -31,4 +30,4 @@ const HeroHeader: React.FC = () => {
     );
 };
 
-export default HeroHeader;
+export default Banner;
