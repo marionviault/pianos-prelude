@@ -51,7 +51,7 @@ export default function Navigation(): JSX.Element {
                                 <Link href="/#hero-banner">
                                     <div className="flex flex-shrink-0 items-center">
                                         <Image className="h-8 w-auto"
-                                               src="/piano-icon.png" alt="Logo représentant des touches de piano"
+                                               src="/logo.png" alt="Logo représentant des touches de piano"
                                                width={50} height={50}/>
                                         <p className={`${bitter.className} pl-3 text-sm font-medium`}>Pianos Prélude</p>
                                     </div>

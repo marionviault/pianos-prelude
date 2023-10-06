@@ -1,20 +1,35 @@
 import React from "react";
-import {PianoProps} from "../interfaces/piano";
+import { PianoProps } from "../interfaces/piano";
 import Image from "next/image";
-//import Link from 'next/link';
+import Slider from "react-slick";
+
+const PARAMETERS = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 500,
+}
 
 const Piano: React.FC<PianoProps> = (piano: PianoProps) => {
+
+    const PHOTOS = piano.photos;
+
     return (
         <div className="group relative text-white">
-            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md lg:aspect-none lg:h-80">
+            <figure className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md lg:aspect-none lg:h-80">
                 {piano.sold && (
                     <span className="sold">
                         VENDU
                     </span>
                 )}
-                <Image src={piano.photo} alt={piano.alt} width="400" height="400"
-                       className="h-full w-full object-cover object-center lg:h-full lg:w-full"/>
-            </div>
+                <Slider {...PARAMETERS}>
+                    {PHOTOS.map((photo, index: React.Key) => {
+                        return (
+                            <Image key={index} src={photo.src} alt={`Photo du ${piano.model}`} width="400" height="400"
+                                   className="h-full w-full object-cover object-center lg:h-full lg:w-full"/>
+                        )
+                    })}
+                </Slider>
+            </figure>
             <div className="mt-4 text-sm">
                 <div className="flex justify-between">
                     <p className="mt-1">
