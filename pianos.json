@@ -4,9 +4,9 @@
       "model": "EC 109",
       "brand": "Young Chang",
       "photos": [
-        { "src": "/pianos/piano-exemple-1.jpg" },
-        { "src": "/pianos/piano-exemple-2.jpg" },
-        { "src": "/pianos/piano-exemple-3.jpg" }
+        { "src": "/pianos/EC-109_1.jpg" },
+        { "src": "/pianos/EC-109_2.jpg" },
+        { "src": "/pianos/EC-109_3.jpg" }
       ],
       "year": 1986,
       "color": "Noir laqué",
@@ -20,8 +20,9 @@
       "model": "U-118",
       "brand": "Young Chang",
       "photos": [
-        { "src": "/pianos/piano-exemple-1.jpg" },
-        { "src": "/pianos/piano-exemple-2.jpg" }
+        { "src": "/pianos/U-118_1.jpg" },
+        { "src": "/pianos/U-118_2.jpg" },
+        { "src": "/pianos/U-118_3.jpg" }
       ],
       "year": 1986,
       "color": "Acajou",
