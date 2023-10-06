@@ -22,8 +22,8 @@ const TESTIMONIES: Array<TestimonyProps> = [
 ]
 
 const PARAMETERS = {
-    dots: false,
-    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 15000,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1
@@ -41,9 +41,9 @@ const Testimonies: React.FC = () => {
                 </h2>
             </div>
 
-            {/*<Slider {...PARAMETERS}>*/}
+            <Slider {...PARAMETERS}>
                 {TESTIMONIES.map((testimony: TestimonyProps) => (
-                    <div key={testimony.author} className="mx-auto max-w-2xl lg:max-w-4xl">
+                    <div key={testimony.author} className={`${styles.testimony} mx-auto max-w-2xl lg:max-w-4xl`}>
                         <figure className="mt-10">
                             <blockquote
                                 className="text-center text-xl font-semibold leading-8 sm:text-2xl sm:leading-9">
@@ -69,7 +69,7 @@ const Testimonies: React.FC = () => {
                         </figure>
                     </div>
                 ))}
-            {/*</Slider>*/}
+            </Slider>
 
         </section>
     );
