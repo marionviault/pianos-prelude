@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../styles/Testimonies.module.scss";
-import Slider from "react-slick"
+import Slider from "react-slick";
 
 interface TestimonyProps {
     quote: string,
