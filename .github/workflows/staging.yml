@@ -19,7 +19,7 @@ jobs:
                     node-version: 18.17.1
             
             -   name: YARN INSTALL && EXPORT
-                run: yarn install && yarn export && ls -la && pwd && whoami
+                run: yarn install && yarn export
 
             -   name: UPLOAD OUT/ DIRECTORY
                 uses: actions/upload-artifact@v3
