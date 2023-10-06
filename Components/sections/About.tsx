@@ -49,7 +49,7 @@ const About: React.FC = () => {
                     <Image src="/pianos/piano-exemple-1.jpg"
                            alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
                            className="rounded-lg bg-gray-100" width="280" height="280"/>
-                    <Image src="/white-marble.jpg"
+                    <Image src="/deco/white-marble.jpg"
                            alt="Top down view of walnut card tray with embedded magnets and card groove."
                            className="rounded-lg bg-gray-100" width="280" height="280"/>
                     <Image src="/pianos/piano-exemple-1.jpg"
