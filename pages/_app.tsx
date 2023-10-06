@@ -23,7 +23,7 @@ function PianoApp({Component, pageProps}: AppProps) {
                 <meta name="description" content="Robin Lefèvre, technicien accordeur en région parisienne"/>
                 <meta name="keywords"
                       content="piano pianos accordeur accordement paris région parisienne musique instrument"/>
-                <link rel="icon" href="/piano-icon.png"/>
+                <link rel="icon" href="/favicon.png"/>
                 <link
                     rel="stylesheet"
                     type="text/css"

@@ -24,7 +24,7 @@ const Piano: React.FC<PianoProps> = (piano: PianoProps) => {
                 <Slider {...PARAMETERS}>
                     {PHOTOS.map((photo, index: React.Key) => {
                         return (
-                            <Image key={index} src={photo.src} alt={piano.alt} width="400" height="400"
+                            <Image key={index} src={photo.src} alt={`Photo du ${piano.model}`} width="400" height="400"
                                    className="h-full w-full object-cover object-center lg:h-full lg:w-full"/>
                         )
                     })}

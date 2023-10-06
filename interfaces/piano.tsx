@@ -4,7 +4,6 @@ export interface PianoProps {
     photos: [
         { src: string }
     ];
-    alt: string;
     year: number;
     color: string,
     price: number;

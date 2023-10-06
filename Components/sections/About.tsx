@@ -46,17 +46,15 @@ const About: React.FC = () => {
                 </div>
 
                 <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
-                    <Image src="/pianos/piano-exemple-1.jpg"
-                           alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
+                    <Image src="/robin/repair.jpg"
+                           alt="Pphoto de Robin Lefevbre entrain d'accorder un piano"
                            className="rounded-lg bg-gray-100" width="280" height="280"/>
-                    <Image src="/white-marble.jpg"
-                           alt="Top down view of walnut card tray with embedded magnets and card groove."
+                    <Image src="/deco/repair.jpg" alt=""
                            className="rounded-lg bg-gray-100" width="280" height="280"/>
-                    <Image src="/pianos/piano-exemple-1.jpg"
-                           alt="Side of walnut card tray with card groove and recessed card area."
+                    <Image src="/deco/workbench.jpg" alt=""
                            className="rounded-lg bg-gray-100" width="280" height="280"/>
-                    <Image src="/pianos/piano-exemple-1.jpg"
-                           alt="Walnut card tray filled with cards and card angled in dedicated groove."
+                    <Image src="/robin/concert.jpg"
+                           alt="Photo de Romain Lefevbre entrain de reparer un piano dans une salle de concert"
                            className="rounded-lg bg-gray-100" width="280" height="280"/>
                 </div>
 

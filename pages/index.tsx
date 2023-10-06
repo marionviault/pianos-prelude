@@ -1,5 +1,5 @@
 import React from "react";
-import HeroHeader from "../Components/sections/HeroHeader";
+import Banner from "../Components/sections/Banner";
 import ServicesAndBenefits from "../Components/sections/ServicesAndBenefits";
 import About from "../Components/sections/About";
 import Reinsurance from "../Components/sections/Reinsurance";
@@ -12,7 +12,7 @@ const Home: React.FC = () => {
 
     return (
         <>
-            <HeroHeader/>
+            <Banner/>
             <About/>
             <ServicesAndBenefits/>
             <Reinsurance/>

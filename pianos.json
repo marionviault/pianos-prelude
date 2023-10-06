@@ -8,7 +8,6 @@
         { "src": "/pianos/piano-exemple-2.jpg" },
         { "src": "/pianos/piano-exemple-3.jpg" }
       ],
-      "alt": "Photo du Young Chang EC 109",
       "year": 1986,
       "color": "Noir laqué",
       "price": 1900,
@@ -24,7 +23,6 @@
         { "src": "/pianos/piano-exemple-1.jpg" },
         { "src": "/pianos/piano-exemple-2.jpg" }
       ],
-      "alt": "Photo du Young Chang U-118",
       "year": 1986,
       "color": "Acajou",
       "price": 2400,
@@ -39,7 +37,6 @@
       "photos": [
         { "src": "/pianos/piano-exemple-1.jpg" }
       ],
-      "alt": "Photo du Schimmel Chippendale 108",
       "year": 1975,
       "color": "Rose fluo",
       "price": 3800,
@@ -54,7 +51,6 @@
       "photos": [
         { "src": "/pianos/piano-exemple-1.jpg" }
       ],
-      "alt": "Photo du",
       "year": 1986,
       "color": "Noir laqué",
       "price": 1900,
@@ -69,7 +65,6 @@
       "photos": [
         { "src": "/pianos/piano-exemple-1.jpg" }
       ],
-      "alt": "Photo du",
       "year": 1986,
       "color": "Acajou",
       "price": 2400,
@@ -84,7 +79,6 @@
       "photos": [
         { "src": "/pianos/piano-exemple-1.jpg" }
       ],
-      "alt": "Photo du",
       "year": 1986,
       "color": "Acajou",
       "price": 2400,
@@ -99,7 +93,6 @@
       "photos": [
         { "src": "/pianos/piano-exemple-1.jpg" }
       ],
-      "alt": "Photo du",
       "year": 1986,
       "color": "Acajou",
       "price": 2400,
