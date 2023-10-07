@@ -1,5 +1,4 @@
 import Link from "next/link";
-import {NextRouter, useRouter} from "next/router";
 import styles from "../styles/Navigation.module.scss";
 import React from "react";
 import {Disclosure} from '@headlessui/react'
@@ -27,10 +26,8 @@ function classNames(...classes: string[]): string {
 
 export default function Navigation(): JSX.Element {
 
-    const ROUTER: NextRouter = useRouter();
-
     return (
-        <Disclosure as="header" className={`${styles.navigation} flex sticky top-0 z-10`}>
+        <Disclosure as="header" className={`${styles.navigation} sticky top-0 z-10`}>
             {({open}) => (
                 <>
                     <nav className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -46,31 +43,30 @@ export default function Navigation(): JSX.Element {
                                 </Disclosure.Button>
                             </div>
 
-                            <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                            <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
 
-                                <Link href="/#hero-banner">
+                                <Link href="/#hero-banner" className="flex">
                                     <div className="flex flex-shrink-0 items-center">
                                         <Image className="h-8 w-auto"
                                                src="/logo.png" alt="Logo représentant des touches de piano"
                                                width={50} height={50}/>
-                                        <p className={`${bitter.className} pl-3 text-sm font-medium`}>Pianos Prélude</p>
+                                        <p className={`${bitter.className} pl-3 text-sm font-medium`}>
+                                            Pianos Prélude
+                                        </p>
                                     </div>
                                 </Link>
 
                                 <div className="hidden sm:ml-6 sm:block">
-                                    <div className="flex space-x-4">
-                                        {NAVIGATION.map((item: ItemProps) => (
-                                            <div key={item.name}
-                                                 className={ROUTER.pathname === item.href ? styles.active : ""}>
-                                                <Link legacyBehavior href={item.href}>
-                                                    <a className='rounded-md px-3 py-2 text-sm font-medium'
-                                                       aria-current={item.current ? 'page' : undefined}>
-                                                        {item.name}
-                                                    </a>
+                                    <ul className="flex space-x-4">
+                                        {NAVIGATION.map((item: ItemProps, index: React.Key) => (
+                                            <li key={index} className='rounded-md px-3 py-2 text-sm font-medium'
+                                                aria-current={item.current ? 'page' : undefined}>
+                                                <Link href={item.href} key={item.name}>
+                                                    {item.name}
                                                 </Link>
-                                            </div>
+                                            </li>
                                         ))}
-                                    </div>
+                                    </ul>
                                 </div>
 
                             </div>
@@ -80,8 +76,8 @@ export default function Navigation(): JSX.Element {
 
                     <Disclosure.Panel className="sm:hidden">
                         <div className="space-y-1 px-2 pb-3 pt-2">
-                            {NAVIGATION.map((item: ItemProps) => (
-                                <Disclosure.Button key={item.name} as="a" href={item.href}
+                            {NAVIGATION.map((item: ItemProps, index: React.Key) => (
+                                <Disclosure.Button key={index} as="a" href={item.href}
                                                    className={classNames(
                                                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                                                        'block rounded-md px-3 py-2 text-base font-medium'
