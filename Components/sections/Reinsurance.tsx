@@ -43,8 +43,9 @@ const Trusted: React.FC = () => {
 
                 <div
                     className="mx-auto mt-10 grid max-w-lg gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-3 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                    {REINSURANCE_ELEMENTS.map((element: ReinsuranceElementProps) => (
-                         <div key={element.name}>
+                    {REINSURANCE_ELEMENTS.map((element: ReinsuranceElementProps, index: React.Key) => (
+                         <div key={index}>
+                             <element.icon className="h-6 w-6 text-gray-800" aria-hidden="true"/>
                              <h3 className="text-2xl font-bold leading-9 tracking-tight">{element.name}</h3>
                              <p className="text-base leading-7">{element.description}</p>
                          </div>
