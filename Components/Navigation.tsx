@@ -1,5 +1,4 @@
 import Link from "next/link";
-import {NextRouter, useRouter} from "next/router";
 import styles from "../styles/Navigation.module.scss";
 import React from "react";
 import {Disclosure} from '@headlessui/react'
@@ -27,8 +26,6 @@ function classNames(...classes: string[]): string {
 
 export default function Navigation(): JSX.Element {
 
-    const ROUTER: NextRouter = useRouter();
-
     return (
         <Disclosure as="header" className={`${styles.navigation} sticky top-0 z-10`}>
             {({open}) => (
@@ -48,7 +45,7 @@ export default function Navigation(): JSX.Element {
 
                             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
 
-                                <Link href="/#hero-banner">
+                                <Link href="/#hero-banner" className="flex">
                                     <div className="flex flex-shrink-0 items-center">
                                         <Image className="h-8 w-auto"
                                                src="/logo.png" alt="Logo représentant des touches de piano"
