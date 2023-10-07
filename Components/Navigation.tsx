@@ -30,7 +30,7 @@ export default function Navigation(): JSX.Element {
     const ROUTER: NextRouter = useRouter();
 
     return (
-        <Disclosure as="header" className={`${styles.navigation} flex sticky top-0 z-10`}>
+        <Disclosure as="header" className={`${styles.navigation} sticky top-0 z-10`}>
             {({open}) => (
                 <>
                     <nav className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
